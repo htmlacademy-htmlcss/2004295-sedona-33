@@ -7,7 +7,7 @@
   </head>
   <body>
 <!--Шапка сайта-->
-    <header class="page-header">
+    <header class="header-block">
     <!--Основное меню-->
       <nav class="navigation">
         <div class="header-logo">
@@ -47,7 +47,7 @@
       </div>
     </header>
 <!--Главный блок - Приветствие-->
-    <main>
+    <main class="main-block">
       <section class="welcome-block">
         <h1 class="visually-hidden">Welcome to the gorgeous Sedona. Because the Grand Canyon sucks!</h1>
         <div class="page-img">
@@ -56,13 +56,13 @@
       </section>
 <!--Блок с заголовком-->      
       <div class="info-block" id="information">
-        <b class="about-text">Седона — небольшой городок в Аризоне, <br>заслуживающий большего!</b>
+        <b class="about-text">Седона — небольшой городок в Аризоне, заслуживающий большего!</b>
         <h2 class="advantages">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</h2>
       </div>
 <!--Список преимуществ 1-->
       <section class="main-content-first-page">
         <section class="advantages-list-first advantages-list">
-          <div class="first-advantage">
+          <div class="first-advantage advantage advantage-blue">
             <h3 class="first-advantage-title" title="Настоящий городок">Настоящий городок</h3>
             <p class="num1">— №1 —</p>
             <p class="first-advantage-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
@@ -89,22 +89,22 @@
         <section class="advantages-list-second advantages-list">  
           <h2 class="visually-hidden">Причины, по которым Седона круче, чем Гранд-Каньон!</h2>
           <img class="canyon-sedona-img sedona-content-img" src="#" alt="Каньон Седона" title="Мост дьявола">
-          <div class="second-advantage">
+          <div class="second-advantage advantage advantage-blue">
             <h3 class="second-advantage-title">Там есть мост дьявола</h3>
             <p class="num num2">— №2 —</p>
             <p class="second-advantage-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
           </div>
-          <div class="third-advantage">
+          <div class="third-advantage advantage">
             <h3 class="third-advantage-title">Небольшая площадь</h3>
             <p class="num num3">— №3 —</p>
             <p class="third-advantage-description">Все достопримечательности находятся очень близко</p>
           </div>
-          <div class="fourth-advantage">
+          <div class="fourth-advantage advantage">
             <h3 class="fourth-advantage-title">Красивая дорога</h3>
             <p class="num num4">— №4 —</p>
             <p class="fourth-advantage-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </div>
-          <div class="fifth-advantage">
+          <div class="fifth-advantage advantage">
             <h3 class="fifth-advantage-title">Мало туристов</h3>
             <p class="num num5">— №5 —</p>
             <p class="fifth-advantage-description">Большинство едет в Гранд Каньон и толпится там</p>
@@ -125,13 +125,13 @@
       <form class="subscribe-form" action="#" method="post">
         <label class="subscribe-label">>Подпишитесь на рассылку
           <span class="subscribe-info">Только полезная информация и никакого спама, честное бойскаутское!</span>
-          <input class="subscribe-input" type="email" name="Ваш e-mail" placeholder="Ваш e-mail">
+          <input class="subscribe-input" type="email" name="e-mail" placeholder="Ваш e-mail" required>
         </label>
         <button class="subscribe-btn" type="submit">Подписаться</button> 
       </form>
     </main>
 <!--Подвал сайта-->
-    <footer class="page-footer">
+    <footer class="footer-block">
       <ul class="network-links">
         <li class="network-twitter network-links-item">
           <a class="twitter-link" href="https://twitter.com/htmlacademy_ru">
