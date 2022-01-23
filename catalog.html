@@ -42,7 +42,7 @@
       </div>
     </header>
     <main class="catalog-page">
-<!--!Параметры выбора остиниц Седоны-->
+<!--!Параметры выбора гостиниц Седоны-->
         <section class="menu-select">
             <!--Заголовок и хлебные крошки-->
             <h1 class="catalog-title">Гостиницы Седоны</h1>
@@ -76,12 +76,12 @@
                         </li>
                     </ul>
                 </fieldset>
-                <!--?Блок радио ТИП ЖИЛЬЯ-->
+                <!--?Блок радио ТИП ЖИЛЬЯ - Работает в multiple-choice режиме....???..-->
                 <fieldset class="residence-checkbox">
                     <legend class="residence-title">Тип жилья:</legend>
                     <ul class="residence-checkbox-list">
                         <li class="residence-item hotel-item">
-                            <input class="hotel-check" type="radio" name="hotel" id="hotel" value="hotel" checked>
+                            <input class="hotel-check" type="radio" name="hotel" id="hotel" value="hotel">
                             <label class="hotel-check-label" for="hotel">Гостиница</label>
                         </li>
                         <li class="residence-item motel-item">
@@ -94,13 +94,11 @@
                         </li>
                     </ul>
                 </fieldset>
-                <!--todo Блок параметров СТОИМОСТЬ-->
+                <!--todo Блок диапазона СТОИМОСТИ - Сделать выбор диапазона с 2 ползунками-->
                 <fieldset class="price-checkbox">
                     <legend class="price-title">Стоимость, ₽:</legend>
-                    <input class="price-input-from" type="number" min="0" max="9000" for="price-input-from">
-                    <input class="price-input-to" type="number" min="0" max="9000" id="price-input-to">
-                    <input type="range" name="price-input-from" id="price-input-from" value="0">
-                    <input type="range" name="price-input-to" id="price-input-to" value="9000">
+                    <input class="price-input-from" type="number" min="0" max="9000" value="0" placeholder="от">
+                    <input class="price-input-to" type="number" min="0" max="9000" value="9000" placeholder="до">
                 </fieldset>
                 <!--Кнопки ПРИМЕНИТЬ и СБРОСИТЬ-->
                 <button class="submit-search-form-btn" type="submit">Применить</button>
@@ -116,7 +114,7 @@
             </div>    
             <!--Сортировка-->
             <select name="select-param" id="select-parameter" aria-label="Сортировка по стоимости">
-                <option value="chip-first-param">Сначала дешёвые</option>
+                <option value="chip-first-param" selected>Сначала дешёвые</option>
                 <option value="expensive-first-param">Сначала дорогие</option>
             </select>
             <!--Режим отображения-->
@@ -138,11 +136,13 @@
                         <img class="amara-img result-card-img" src="#" alt="Amara Resort & Spa" width="" height="">
                         <h3 class="amara-title result-card-title">Amara Resort & Spa</h3>
                     </a>
-                    <p class="residence-type residence-type-amara">Гостиница</p>
-                    <p class="price-type price-type-amara">От 4000 ₽</p>
+                    <p class="result-card-paragraph paragraph-amara">
+                        <span class="residence-type residence-type-amara">Гостиница</span>
+                        <span class="price-type price-type-amara">От 4000 ₽</span>
+                    </p>
                     <a class="more-about-btn more-about-amara" href="#">Подробнее</a>
                     <a class="add-to-fav add-to-fav-amara" href="#">В избранное</a>
-                    <!--todo ЗВЕЗДЫ-->
+                    <span class="rating-stars rating-stars-amara visually-hidden">Уровень рейтинга</span>
                     <!--todo РЕЙТИНГ-->
                 </li>
                 <li class="desert-card result-card-item">
@@ -150,11 +150,13 @@
                         <img class="desert-img result-card-img" src="#" alt="Desert Quail Inn" width="" height="">
                         <h3 class="desert-title result-card-title">Desert Quail Inn</h3>
                     </a>
-                    <p class="residence-type residence-type-desert">Гостиница</p>
-                    <p class="price-type price-type-desert">От 3000 ₽</p>
+                    <p class="result-card-paragraph paragraph-desert">
+                        <span class="residence-type residence-type-desert">Гостиница</span>
+                        <span class="price-type price-type-desert">От 3000 ₽</span>
+                    </p>
                     <a class="more-about-btn more-about-desert" href="#">Подробнее</a>
                     <a class="add-to-fav add-to-fav-desert" href="#">В избранное</a>
-                    <!--todo ЗВЕЗДЫ-->
+                    <span class="rating-stars rating-stars-desert visually-hidden">Уровень рейтинга</span>
                     <!--todo РЕЙТИНГ-->
                 </li>
                 <li class="villas-card result-card-item">
@@ -162,11 +164,13 @@
                         <img class="villas-img result-card-img" src="#" alt="villas Resort & Spa" width="" height="">
                         <h3 class="villas-title result-card-title">Villas at Poco Diablo</h3>
                     </a>
-                    <p class="residence-type residence-type-villas">Гостиница</p>
-                    <p class="price-type price-type-villas">От 2000 ₽</p>
+                    <p class="result-card-paragraph paragraph-villas">
+                        <span class="residence-type residence-type-villas">Гостиница</span>
+                        <span class="price-type price-type-villas">От 2000 ₽</span>
+                    </p>
                     <a class="more-about-btn more-about-villas" href="#">Подробнее</a>
                     <a class="add-to-fav add-to-fav-villas in-fav" href="#">В избранном</a>
-                    <!--todo ЗВЕЗДЫ-->
+                    <span class="rating-stars rating-stars-villas visually-hidden">Уровень рейтинга</span>
                     <!--todo РЕЙТИНГ-->
                 </li>
                 <li class="greentree-card result-card-item">
@@ -174,11 +178,12 @@
                         <img class="greentree-img result-card-img" src="#" alt="GreenTree Inn" width="" height="">
                         <h3 class="greentree-title result-card-title">GreenTree Inn</h3>
                     </a>
-                    <p class="residence-type residence-type-greentree">Гостиница</p>
-                    <p class="price-type price-type-greentree">От 3000 ₽</p>
+                    <p class="result-card-paragraph paragraph-greentree"></p>
+                        <span class="residence-type residence-type-greentree">Гостиница</span>
+                        <span class="price-type price-type-greentree">От 3000 ₽</span>
                     <a class="more-about-btn more-about-greentree" href="#">Подробнее</a>
                     <a class="add-to-fav add-to-fav-greentree" href="#">В избранное</a>
-                    <!--todo ЗВЕЗДЫ-->
+                    <span class="rating-stars rating-stars-greentree visually-hidden">Уровень рейтинга</span>
                     <!--todo РЕЙТИНГ-->
                 </li>
             </ul>
@@ -208,7 +213,7 @@
             </ul>
             <!--Количество гостиниц на странице-->
             <div class="how-many-display">
-                <p class="how-many-display-title">Гостиниц на странице:</p>
+                <h3 class="how-many-display-title">Гостиниц на странице:</h3>
                 <select name="how-many" id="how-many">
                     <option class="view-four" value="four">4</option>
                     <option class="view-six" value="six">6</option>
