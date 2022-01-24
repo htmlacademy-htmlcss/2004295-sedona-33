@@ -8,7 +8,6 @@
   <body>
 <!--!Шапка сайта-->
     <header class="page-header">
-    <!--Основное меню-->
       <a class="header-logo">
         <img class="header-logo-img" src="№" alt="Логотип сайта" width="" height="">
       </a>  
@@ -56,9 +55,7 @@
               <a class="breadcrumps-hotels-link" href="">Гостиницы</a>
             </li>
           </ul>
-          <!--Форма выбора параметров-->
           <form class="search-form" action="get">
-          <!--Блок чекбокс ИНФРАСТРУКТУРА-->
             <fieldset class="infrastructure-checkbox">
               <legend class="infrastructure-title">Инфраструктура:</legend>
               <ul class="infrastructure-checkbox-list">
@@ -99,24 +96,20 @@
               <input class="price-input-from" type="number" min="0" max="9000" value="0" placeholder="от">
               <input class="price-input-to" type="number" min="0" max="9000" value="9000" placeholder="до">
             </fieldset>
-            <!--Кнопки ПРИМЕНИТЬ и СБРОСИТЬ-->
             <button class="submit-search-form-btn" type="submit">Применить</button>
             <input type="reset" name="reset" value="Сбросить">
           </form>
         </section>
-<!--!Найдено гостиниц-->
+<!--!Результаты поиска-->
         <section class="search-results">
-          <!--Найдено гостиниц-->
           <div class="hotels-found-amount">
               <h2 class="hotel-found-title">Найдено гостиниц:</h2>
               <span class="hotel-found-count">38</span>
           </div>    
-          <!--Сортировка-->
           <select name="select-param" id="select-parameter" aria-label="Сортировка по стоимости">
               <option value="chip-first-param" selected>Сначала дешёвые</option>
               <option value="expensive-first-param">Сначала дорогие</option>
           </select>
-          <!--Режим отображения-->
           <div class="display-mode">
               <a class="display-mode-btn display-cards" href="#">
                   <span class="visually-hidden">Показать карточки</span>
@@ -222,7 +215,6 @@
               <a class="pagination-link pagination-last-link" href="#">10</a>
             </li>
           </ul>
-          <!--Количество гостиниц на странице-->
           <div class="how-many-display">
             <h3 class="how-many-display-title">Гостиниц на странице:</h3>
             <select name="how-many" id="how-many">
