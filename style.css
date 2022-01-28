@@ -1,3 +1,136 @@
+
 .visually-hidden {
     display: none;
 }
+
+@font-face { 
+    font-family: "PT Sans"; 
+    font-style: normal; 
+    font-weight: 400; 
+    src: url("../fonts/pt-sans-regular.woff2") format("woff2"); 
+    font-display: swap; 
+}
+
+@font-face { 
+    font-family: "PT Sans"; 
+    font-style: normal; 
+    font-weight: 700; 
+    src: url("../fonts/pt-sans-regular.woff2") format("woff2"); 
+    font-display: swap; 
+}
+
+body {
+    font-family: "PT Sans", Arial, sans-serif;
+}
+
+.nav-menu {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #000000;
+}
+
+.search-tool {
+    content: url(/images/general/search.svg);
+    width: 18.05px;
+    height: 18.1px;
+}
+
+.fav-tool {
+    content: url(/images/general/favorite.svg);
+    width: 18.05px;
+    height: 17px;
+}
+
+/*todo Не отображается на странице*/
+.counter {
+    display: block;
+    background-color: #7DB54F;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+/*todo Размеры не совпадают с макетом*/
+.menu-btn {
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 20px;
+
+    background-color: #756257;
+    border-radius: 4px;
+    padding: 9px 15px 8px;
+}
+
+/* Welcome section */
+
+.welcome-block {
+    background-color: #000000;
+    background-image: url(/images/index/index-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+}
+
+/* Преимущества */
+
+.about-text {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.reasons-paragraph {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.advantage {
+    width: 400px;
+    height: 384px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.advantage-blue {
+    color: #FFFFFF;
+    background-color: #83B3D3;
+}
+
+.advantage-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+.advantages-list {
+    list-style: none;
+    padding-left: 0px;
+}
+
+.advantages-list li:nth-child(odd) {
+    background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantage.road {
+    background-color: rgba(131, 179, 211, 0.2);
+}
+
+
