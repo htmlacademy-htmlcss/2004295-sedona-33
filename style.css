@@ -21,6 +21,8 @@
 
 body {
     font-family: "PT Sans", Arial, sans-serif;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
 .nav-menu {
@@ -53,6 +55,7 @@ body {
 /*todo Не отображается на странице*/
 .counter {
     display: block;
+    content:"";
     background-color: #7DB54F;
     width: 20px;
     height: 20px;
@@ -61,26 +64,39 @@ body {
 
 /*todo Размеры не совпадают с макетом*/
 .menu-btn {
+    display: block;
+    width: 160px;
+    height: 37px;
     font-weight: 700;
+    line-height: 20px;
+    text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     color: #FFFFFF;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 20px;
 
     background-color: #756257;
     border-radius: 4px;
-    padding: 9px 15px 8px;
 }
 
 /* Welcome section */
 
 .welcome-block {
+    text-align: center;
+    padding-top: 51px;
+    padding-bottom: 82px;
     background-color: #000000;
     background-image: url(/images/index/index-background.jpg);
     background-repeat: no-repeat;
     background-size: 100% auto;
+}
+
+
+/* todo Спозиционировать декоративный элемент */
+.advantages::before {
+    content: url(/images/index/before-welcome.svg);
+    display: block;
+    position: absolute;
+    border: 1px dashed blue;
 }
 
 /* Преимущества */
@@ -91,6 +107,8 @@ body {
     line-height: 36px;
     text-align: center;
     text-transform: uppercase;
+    margin-top: 63px;
+    margin-bottom: 23px;
 }
 
 .reasons-paragraph {
@@ -98,6 +116,7 @@ body {
     font-size: 22px;
     line-height: 36px;
     text-align: center;
+    margin-bottom: 79px;
 }
 
 .advantage {
@@ -132,5 +151,3 @@ body {
 .advantage.road {
     background-color: rgba(131, 179, 211, 0.2);
 }
-
-
