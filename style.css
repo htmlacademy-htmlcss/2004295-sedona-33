@@ -19,10 +19,14 @@
     font-display: swap; 
 }
 
+/* ? Сделать box-shadow для всей страницы
+    ? Не указан параметр в макете */
+
 body {
     font-family: "PT Sans", Arial, sans-serif;
     margin-left: 40px;
     margin-right: 40px;
+    font-weight: 400;
 }
 
 .nav-menu {
@@ -54,28 +58,28 @@ body {
 
 /*todo Не отображается на странице*/
 .counter {
-    display: block;
-    content:"";
+    display: inline-block;
+    content: "";
     background-color: #7DB54F;
     width: 20px;
     height: 20px;
     border-radius: 50%;
 }
 
-/*todo Размеры не совпадают с макетом*/
+/*?Визуально размеры не совпадают с макетом \_(*_*)_/ */
 .menu-btn {
-    display: block;
-    width: 160px;
-    height: 37px;
+    color: #FFFFFF;
     font-weight: 700;
     line-height: 20px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
-    color: #FFFFFF;
 
+    display: inline-block;
+    width: 160px;
     background-color: #756257;
     border-radius: 4px;
+    padding: 9px 0px 8px;;
 }
 
 /* Welcome section */
@@ -112,7 +116,6 @@ body {
 }
 
 .reasons-paragraph {
-    font-weight: 400;
     font-size: 22px;
     line-height: 36px;
     text-align: center;
@@ -123,7 +126,6 @@ body {
     width: 400px;
     height: 384px;
     text-align: center;
-    font-weight: 400;
     font-size: 18px;
     line-height: 21px;
 }
@@ -131,6 +133,7 @@ body {
 .advantage-blue {
     color: #FFFFFF;
     background-color: #83B3D3;
+    position: relative;
 }
 
 .advantage-title {
@@ -150,4 +153,173 @@ body {
 
 .advantage.road {
     background-color: rgba(131, 179, 211, 0.2);
+}
+
+/* todo Сделать правильное позиционирование
+    todo этого и следующего контентного изобр. */
+.real-town::after {
+    content: url(/images/index/real-town.jpg);
+    position: absolute;
+    left: 400px;
+    bottom: 150px;
+    height: 384px;
+}
+
+.evil-bridge::before {
+    content: url(/images/index/evil-bridge.jpg);
+    position: absolute;
+    left: 400px;
+    bottom: 150px;
+    height: 384px;
+}
+
+
+.icon-house::before {
+    content: url(/images/index/icon-house.svg);
+    width: 75px;
+    height: 72px;
+}
+
+.icon-food::before {
+    content: url(/images/index/icon-food.svg);
+    width: 74px;
+    height: 70px;
+}
+
+.icon-suv::before {
+    content: url(/images/index/icon-suv.svg);
+    width: 64px;
+    height: 76px;
+}
+
+.search-block {
+    text-align: center;
+    padding: 91px 0 93px;
+}
+
+.search-question {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+.search-offer {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+/* ?Визуально отличается от макета */
+.search-link {
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 36px;
+    text-transform: uppercase;
+
+    background-color: #756257;
+    text-decoration: none;
+    display: inline-block;
+    width: 575px;
+    padding: 15px 0px;
+    border-radius: 10px;
+}
+
+.subscribe {
+    color: #FFFFFF;
+    text-align: center;
+
+    background-color: #000000;
+    background-image: url(/images/index/subscribe-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    padding: 94px 0px;
+}
+
+.subscribe-title {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 36px;
+    text-transform: uppercase;
+    margin: 0px;
+}
+
+.subscribe-info {
+    font-size: 22px;
+    line-height: 26px;
+}
+
+/* todo Соединить input и button */
+
+.subscribe-input {
+    width: 600px;
+    height: 60px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 0px 19px 0px 22px;
+    font-size: 18px;
+    line-height: 26px;
+    border: none;
+}
+
+.subscribe-btn {
+    background-color: #83B3D3;
+    width: 200px;
+    height: 60px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 26px;
+    text-transform: uppercase;
+    border: none;
+}
+
+/* !footer */
+
+.page-footer {
+    width: 1200px;
+    height: 120px;
+}
+
+.socials-list li {
+    list-style: none;
+}
+
+.twitter-link {
+    display: inline-block;
+    width: 18px;
+    height: 14px;
+    content: url(/images/general/twitter.svg);
+}
+
+.facebook-link {
+    display: inline-block;
+    width: 10px;
+    height: 18px;
+    content: url(/images/general/facebook.svg);
+}
+
+.youtube-link {
+    display: inline-block;
+    width: 20.1px;
+    height: 16px;
+    content: url(/images/general/youtube.svg);
+}
+
+.phone {
+    font-size: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.footer-logo {
+    display: inline-block;
+    width: 115px;
+    height: 34px;
+    content: url(/images/general/logo_htmlacademy.svg);
 }
