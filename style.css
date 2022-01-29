@@ -55,6 +55,21 @@ body {
     color: #000000;
 }
 
+.nav-link:hover:not(.active-link) {
+    color: #756257;
+}
+
+.nav-link:active:not(.active-link) {
+    color: rgba(117, 98, 87, 0.3);
+}
+
+.active-link {
+    color: #000000;
+    text-decoration: underline;
+    text-underline-offset: 21px;
+    text-decoration-color: #756257;
+}
+
 .user-menu {
     display: flex;
     align-items: center;
