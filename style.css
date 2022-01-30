@@ -181,6 +181,18 @@ body {
     font-weight: 700;
     font-size: 24px;
     line-height: 28px;
+    text-transform: uppercase;
+}
+
+.advantage-description {
+    font-size: 18px;
+    line-height: 21px;
+    max-width: 250px;
+    margin: 0px auto;
+}
+
+.advantage-blue .advantage-description {
+    max-width: 220px;
 }
 
 .advantages-list {
@@ -198,6 +210,13 @@ body {
 
 /* todo Сделать правильное позиционирование
     todo этого и следующего контентного изобр. */
+
+.real-town {
+    
+}
+
+
+
 .real-town::after {
     content: url(/images/index/real-town.jpg);
     position: absolute;
