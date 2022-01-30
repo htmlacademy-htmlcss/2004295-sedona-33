@@ -169,6 +169,9 @@ body {
     text-align: center;
     font-size: 18px;
     line-height: 21px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .advantage-blue {
@@ -182,6 +185,11 @@ body {
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
+    margin: 0px;
+}
+
+.num {
+    margin: 30px 0px;
 }
 
 .advantage-description {
@@ -210,12 +218,6 @@ body {
 
 /* todo Сделать правильное позиционирование
     todo этого и следующего контентного изобр. */
-
-.real-town {
-    
-}
-
-
 
 .real-town::after {
     content: url(/images/index/real-town.jpg);
