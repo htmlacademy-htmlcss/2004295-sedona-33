@@ -186,8 +186,12 @@ body {
     margin: 0px;
 }
 
-.advantages-list .advantage-title {
-    margin-bottom: 20px;
+.advantages-list .advantage-description {
+    margin-top: 20px;
+}
+
+.advantage-description.last-row {
+    margin: 0px auto;
 }
 
 .num {
