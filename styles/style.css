@@ -33,6 +33,7 @@ body {
 .page-header {
     display: flex;
     height: 65px;
+    margin: 0px 70px;
 }
 
 .nav-menu {
@@ -74,7 +75,6 @@ body {
     display: flex;
     align-items: center;
     margin-left: auto;
-    margin-right: 70px;
 }
 
 .search,
@@ -218,9 +218,6 @@ body {
 .advantage.road {
     background-color: rgba(131, 179, 211, 0.2);
 }
-
-/* todo Сделать правильное позиционирование
-    todo этого и следующего контентного изобр. */
 
 .real-town::after {
     content: url(/images/index/real-town.jpg);
