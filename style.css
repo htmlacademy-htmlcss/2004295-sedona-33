@@ -36,6 +36,7 @@ body {
 }
 
 .nav-menu {
+    width: 345px;
     font-weight: 700;
     font-size: 20px;
     line-height: 26px;
@@ -43,11 +44,10 @@ body {
 }
 
 .nav-list {
-    list-style: none;
     display: flex;
     justify-content: space-around;
-    width: 345px;
     padding: 0px;
+    list-style: none;
 }
 
 .nav-link {
@@ -142,7 +142,6 @@ body {
     content: url(/images/index/before-welcome.svg);
     position: absolute;
     display: block;
-    width: 100%;
     border: 2px dashed rgb(2, 255, 65);
 }
 
