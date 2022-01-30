@@ -19,6 +19,42 @@
     font-display: swap; 
 }
 
+
+.button:hover {
+    background-color: #615048;
+}
+
+.button:focus {
+    background-color: #615048;
+    outline: 3px solid #83B3D3;
+}
+
+.button:active {
+    background-color: #615048;
+    color: rgba(255, 255, 255, 0.3);
+    border: none;
+}
+
+.input {
+    background-color: #F2F2F2;
+    border: none;
+}
+
+.input:hover {
+    background-color: #E5E5E5;
+}
+
+.input:focus {
+    background-color: #E5E5E5;
+    outline: 3px solid #83B3D3;
+}
+
+/* todo Сделать состояние ERROR */
+.input:??? {
+    background-color: #FFFFFF;
+    border-inline: 2px solid #FF5757;
+}
+
 /* ? Сделать box-shadow для всей страницы
     ? Не указан параметр в макете */
 
@@ -69,6 +105,7 @@ body {
     text-decoration: underline;
     text-underline-offset: 21px;
     text-decoration-color: #756257;
+    cursor: pointer;
 }
 
 .user-menu {
@@ -90,8 +127,29 @@ body {
     vertical-align: middle;
 }
 
+.search-tool:hover {
+    content: url(/images/general/search-hover.svg);
+    width: 18.05px;
+    height: 18.1px;
+    vertical-align: middle;
+}
+
+.search-tool:active {
+    content: url(/images/general/search-active.svg);
+    width: 18.05px;
+    height: 18.1px;
+    vertical-align: middle;
+}
+
 .fav-tool {
     content: url(/images/general/favorite.svg);
+    width: 18.05px;
+    height: 17px;
+    vertical-align: middle;
+}
+
+.fav-tool:hover {
+    content: url(/images/general/favorite-hover.svg);
     width: 18.05px;
     height: 17px;
     vertical-align: middle;
@@ -332,7 +390,6 @@ body {
     padding: 0px 19px 0px 22px;
     font-size: 18px;
     line-height: 26px;
-    border: none;
 }
 
 .subscribe-btn {
