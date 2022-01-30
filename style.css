@@ -83,8 +83,6 @@ body {
     text-align: center;
 }
 
-
-
 .search-tool {
     content: url(/images/general/search.svg);
     width: 18.05px;
@@ -188,6 +186,10 @@ body {
     margin: 0px;
 }
 
+.advantages-list .advantage-title {
+    margin-bottom: 20px;
+}
+
 .num {
     margin: 30px 0px;
 }
@@ -206,6 +208,7 @@ body {
 .advantages-list {
     list-style: none;
     padding-left: 0px;
+    margin: 0px;
 }
 
 .advantages-list li:nth-child(odd) {
@@ -235,23 +238,29 @@ body {
     height: 384px;
 }
 
-
 .icon-house::before {
     content: url(/images/index/icon-house.svg);
     width: 75px;
     height: 72px;
+    display: block;
+    margin: 0px auto 23px;
+
 }
 
 .icon-food::before {
     content: url(/images/index/icon-food.svg);
     width: 74px;
     height: 70px;
+    display: block;
+    margin: 0px auto 23px;
 }
 
 .icon-suv::before {
     content: url(/images/index/icon-suv.svg);
     width: 64px;
     height: 76px;
+    display: block;
+    margin: 0px auto 23px;
 }
 
 .search-block {
@@ -333,6 +342,7 @@ body {
     height: 60px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
+    padding: 0px;
 
     color: #FFFFFF;
     font-weight: 700;
