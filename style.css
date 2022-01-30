@@ -226,7 +226,6 @@ body {
     content: url(/images/index/real-town.jpg);
     position: absolute;
     left: 400px;
-    bottom: 150px;
     height: 384px;
 }
 
@@ -234,7 +233,6 @@ body {
     content: url(/images/index/evil-bridge.jpg);
     position: absolute;
     left: 400px;
-    bottom: 150px;
     height: 384px;
 }
 
