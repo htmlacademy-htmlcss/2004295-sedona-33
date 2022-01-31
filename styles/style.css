@@ -133,10 +133,11 @@ body {
 /* todo Спозиционировать декоративный элемент */
 .advantages::before {
     content: url(/images/index/before-welcome.svg);
-    display: block;
     position: absolute;
+    display: inline-block;
     top: -120px;
     width: 100%;
+    text-align: center;
 }
 
 .about-text {
@@ -292,14 +293,17 @@ body {
 }
 
 .subscribe {
-    color: #FFFFFF;
     text-align: center;
 
+    background-size: 100% auto;
+    padding: 94px 0px;
+}
+
+.subscribe-index {
+    color: #FFFFFF;
     background-color: #000000;
     background-image: url(/images/index/subscribe-bg.jpg);
     background-repeat: no-repeat;
-    background-size: 100% auto;
-    padding: 94px 0px;
 }
 
 .subscribe-title {
