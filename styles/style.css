@@ -1,8 +1,3 @@
-
-.visually-hidden {
-    display: none;
-}
-
 @font-face { 
     font-family: "PT Sans"; 
     font-style: normal; 
@@ -19,6 +14,42 @@
     font-display: swap; 
 }
 
+/** Псевдоклассы состояний */
+
+.nav-link:hover:not(.active-link) {
+    color: #756257;
+}
+
+.nav-link:active:not(.active-link) {
+    color: rgba(117, 98, 87, 0.3);
+}
+
+.search-tool:hover {
+    content: url(/images/general/search-hover.svg);
+    width: 18.05px;
+    height: 18.1px;
+    vertical-align: middle;
+}
+
+.search-tool:active {
+    content: url(/images/general/search-active.svg);
+    width: 18.05px;
+    height: 18.1px;
+    vertical-align: middle;
+}
+
+.fav-tool:hover {
+    content: url(/images/general/favorite-hover.svg);
+    width: 18.05px;
+    height: 17px;
+    vertical-align: middle;
+}
+
+/* todo Сделать состояние ERROR */
+.input:??? {
+    background-color: #FFFFFF;
+    border-inline: 2px solid #FF5757;
+}
 
 .button:hover {
     background-color: #615048;
@@ -49,12 +80,6 @@
     outline: 3px solid #83B3D3;
 }
 
-/* todo Сделать состояние ERROR */
-.input:??? {
-    background-color: #FFFFFF;
-    border-inline: 2px solid #FF5757;
-}
-
 /* ? Сделать box-shadow для всей страницы
     ? Не указан параметр в макете */
 
@@ -64,7 +89,12 @@ body {
     margin: 0px 40px;
 }
 
-/* !header */
+
+.visually-hidden {
+    display: none;
+}
+
+/** header */
 
 .page-header {
     display: flex;
@@ -90,14 +120,6 @@ body {
 .nav-link {
     text-decoration: none;
     color: #000000;
-}
-
-.nav-link:hover:not(.active-link) {
-    color: #756257;
-}
-
-.nav-link:active:not(.active-link) {
-    color: rgba(117, 98, 87, 0.3);
 }
 
 .active-link {
@@ -127,29 +149,8 @@ body {
     vertical-align: middle;
 }
 
-.search-tool:hover {
-    content: url(/images/general/search-hover.svg);
-    width: 18.05px;
-    height: 18.1px;
-    vertical-align: middle;
-}
-
-.search-tool:active {
-    content: url(/images/general/search-active.svg);
-    width: 18.05px;
-    height: 18.1px;
-    vertical-align: middle;
-}
-
 .fav-tool {
     content: url(/images/general/favorite.svg);
-    width: 18.05px;
-    height: 17px;
-    vertical-align: middle;
-}
-
-.fav-tool:hover {
-    content: url(/images/general/favorite-hover.svg);
     width: 18.05px;
     height: 17px;
     vertical-align: middle;
@@ -182,7 +183,7 @@ body {
     margin-left: 20px;
 }
 
-/* !main */
+/** main */
 
 .welcome-block {
     text-align: center;
@@ -193,15 +194,18 @@ body {
     background-size: 100% auto;
 }
 
+.advantages {
+    position: relative;
+}
+
 /* todo Спозиционировать декоративный элемент */
 .advantages::before {
     content: url(/images/index/before-welcome.svg);
-    position: absolute;
     display: block;
-    border: 2px dashed rgb(2, 255, 65);
+    position: absolute;
+    top: -120px;
+    width: 100%;
 }
-
-/* Преимущества */
 
 .about-text {
     font-weight: 700;
@@ -381,7 +385,6 @@ body {
 }
 
 /* todo Соединить input и button */
-
 .subscribe-input {
     width: 600px;
     height: 60px;
@@ -408,7 +411,7 @@ body {
     border: none;
 }
 
-/* !footer */
+/** footer */
 
 .page-footer {
     height: 120px;
