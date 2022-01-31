@@ -14,81 +14,13 @@
     font-display: swap; 
 }
 
-/** Псевдоклассы состояний */
-
-.nav-link:hover:not(.active-link) {
-    color: #756257;
-}
-
-.nav-link:active:not(.active-link) {
-    color: rgba(117, 98, 87, 0.3);
-}
-
-.search-tool:hover {
-    content: url(/images/general/search-hover.svg);
-    width: 18.05px;
-    height: 18.1px;
-    vertical-align: middle;
-}
-
-.search-tool:active {
-    content: url(/images/general/search-active.svg);
-    width: 18.05px;
-    height: 18.1px;
-    vertical-align: middle;
-}
-
-.fav-tool:hover {
-    content: url(/images/general/favorite-hover.svg);
-    width: 18.05px;
-    height: 17px;
-    vertical-align: middle;
-}
-
-/* todo Сделать состояние ERROR */
-.input:??? {
-    background-color: #FFFFFF;
-    border-inline: 2px solid #FF5757;
-}
-
-.button:hover {
-    background-color: #615048;
-}
-
-.button:focus {
-    background-color: #615048;
-    outline: 3px solid #83B3D3;
-}
-
-.button:active {
-    background-color: #615048;
-    color: rgba(255, 255, 255, 0.3);
-    border: none;
-}
-
-.input {
-    background-color: #F2F2F2;
-    border: none;
-}
-
-.input:hover {
-    background-color: #E5E5E5;
-}
-
-.input:focus {
-    background-color: #E5E5E5;
-    outline: 3px solid #83B3D3;
-}
-
 /* ? Сделать box-shadow для всей страницы
     ? Не указан параметр в макете */
-
 body {
     font-family: "PT Sans", Arial, sans-serif;
     font-weight: 400;
     margin: 0px 40px;
 }
-
 
 .visually-hidden {
     display: none;
@@ -466,4 +398,70 @@ body {
     height: 34px;
     content: url(/images/general/logo_htmlacademy.svg);
     margin-right: 72px;
+}
+
+/** Псевдоклассы состояний */
+
+.nav-link:hover:not(.active-link) {
+    color: #756257;
+}
+
+.nav-link:active:not(.active-link) {
+    color: rgba(117, 98, 87, 0.3);
+}
+
+.search-tool:hover {
+    content: url(/images/general/search-hover.svg);
+    width: 18.05px;
+    height: 18.1px;
+    vertical-align: middle;
+}
+
+.search-tool:active {
+    content: url(/images/general/search-active.svg);
+    width: 18.05px;
+    height: 18.1px;
+    vertical-align: middle;
+}
+
+.fav-tool:hover {
+    content: url(/images/general/favorite-hover.svg);
+    width: 18.05px;
+    height: 17px;
+    vertical-align: middle;
+}
+
+/* todo Сделать состояние ERROR */
+.input:??? {
+    background-color: #FFFFFF;
+    border-inline: 2px solid #FF5757;
+}
+
+.button:hover {
+    background-color: #615048;
+}
+
+.button:focus {
+    background-color: #615048;
+    outline: 3px solid #83B3D3;
+}
+
+.button:active {
+    background-color: #615048;
+    color: rgba(255, 255, 255, 0.3);
+    border: none;
+}
+
+.input {
+    background-color: #F2F2F2;
+    border: none;
+}
+
+.input:hover {
+    background-color: #E5E5E5;
+}
+
+.input:focus {
+    background-color: #E5E5E5;
+    outline: 3px solid #83B3D3;
 }
