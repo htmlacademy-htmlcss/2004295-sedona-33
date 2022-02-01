@@ -61,7 +61,7 @@ body {
 .active-link {
   color: #000000;
   text-decoration: underline;
-  text-underline-offset: 21px;
+  text-underline-offset: 23px;
   text-decoration-color: #756257;
   cursor: pointer;
 }
@@ -150,8 +150,6 @@ body {
   position: absolute;
   min-width: 1200px;
   height: 57px;
-
-  border: 1px dashed red;
 }
 
 .about-text {
@@ -392,7 +390,6 @@ body {
   width: 40px;
   height: 40px;
   background-repeat: no-repeat;
-  position: relative;
 }
 
 .twitter-link::after {
