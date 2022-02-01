@@ -386,7 +386,7 @@ body {
   list-style: none;
 }
 
-/** Добавлю после прохождения темы */
+/*todo Добавлю иконки после прохождения темы */
 .footer-link {
   display: inline-block;
   width: 40px;
