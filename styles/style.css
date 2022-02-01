@@ -191,22 +191,22 @@ body {
   position: relative;
 }
 
-.real-town::after {
-  background-image: url(/images/index/real-town.jpg);
-  left: 100%;
+.real-town::after,
+.evil-bridge::before {
   content: "";
   position: absolute;
   width: 800px;
   height: 100%;
 }
 
+.real-town::after {
+  background-image: url(/images/index/real-town.jpg);
+  left: 100%;
+}
+
 .evil-bridge::before {
   background-image: url(/images/index/evil-bridge.jpg);
   right: 100%;
-  content: "";
-  position: absolute;
-  width: 800px;
-  height: 100%;
 }
 
 .advantage-title {
@@ -386,28 +386,25 @@ body {
   list-style: none;
 }
 
+/** Добавлю после прохождения темы */
 .footer-link {
   display: inline-block;
+  width: 40px;
+  height: 40px;
   background-repeat: no-repeat;
-  vertical-align: middle;
+  position: relative;
 }
 
-.twitter-link {
+.twitter-link::after {
   background-image: url(/images/general/twitter.svg);
-  width: 18px;
-  height: 15px;
 }
 
-.facebook-link {
+.facebook-link::after {
   background-image: url(/images/general/facebook.svg);
-  width: 20px;
-  height: 16px;
 }
 
-.youtube-link {
+.youtube-link::after {
   background-image: url(/images/general/youtube.svg);
-  width: 20px;
-  height: 16px;
 }
 
 .phone {
@@ -435,27 +432,6 @@ body {
 
 .nav-link:active:not(.active-link) {
   color: rgba(117, 98, 87, 0.3);
-}
-
-.search-tool:hover {
-  background-image: url(/images/general/search-hover.svg);
-  width: 18.05px;
-  height: 18.1px;
-  vertical-align: middle;
-}
-
-.search-tool:active {
-  background-image: url(/images/general/search-active.svg);
-  width: 18.05px;
-  height: 18.1px;
-  vertical-align: middle;
-}
-
-.fav-tool:hover {
-  background-image: url(/images/general/favorite-hover.svg);
-  width: 18.05px;
-  height: 17px;
-  vertical-align: middle;
 }
 
 .button:hover {
