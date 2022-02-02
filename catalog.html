@@ -40,62 +40,62 @@
       <section class="menu-select">
         <h1 class="catalog-title">Гостиницы Седоны</h1>
         <ul class="breadcrumps">
-          <li class="breadcrumps-main breadcrumps-item">
-            <a class="breadcrumps-main-link" href="index.html" aria-label="Главная"></a>
+          <li class="breadcrumps-item">
+            <a class="breadcrumps-link bread-home" href="index.html" aria-label="Главная"></a>
           </li>
-          <li class="breadcrumps-hotels breadcrumps-item">
-            <a class="breadcrumps-hotels-link" href="">Гостиницы</a>
+          <li class="breadcrumps-item">
+            <a class="breadcrumps-link">Гостиницы</a>
           </li>
         </ul>
         <form class="search-form" action="get">
-          <fieldset class="infrastructure-checkbox">
-            <legend class="infrastructure-title">Инфраструктура:</legend>
-            <ul class="infrastructure-checkbox-list">
-              <li class="infrastructure-checkbox-item waterpool-item">
-                <label class="waterpool-check-label">
-                  <input class="waterpool-check" type="checkbox" name="waterpool" checked> Бассейн
+          <fieldset class="checkbox">
+            <legend class="checkbox-title">Инфраструктура:</legend>
+            <ul class="checkbox-list">
+              <li class="checkbox-item">
+                <label class="form-text">
+                  <input class="checkbox-input" type="checkbox" name="waterpool" checked> Бассейн
                 </label>
               </li>
-              <li class="infrastructure-checkbox-item parking-item">
-                <label class="parking-check-label">
-                  <input class="parking-check" type="checkbox" name="parking" checked> Парковка
+              <li class="checkbox-item">
+                <label class="form-text">
+                  <input class="checkbox-input" type="checkbox" name="parking" checked> Парковка
                 </label>
               </li>
-              <li class="infrastructure-checkbox-item wifi-item">
-                <label class="wifi-check-label">
-                  <input class="wifi-check" type="checkbox" name="wifi"> Wi-Fi
+              <li class="checkbox-item">
+                <label class="form-text">
+                  <input class="checkbox-input" type="checkbox" name="wifi"> Wi-Fi
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="residence-checkbox">
-            <legend class="residence-title">Тип жилья:</legend>
-            <ul class="residence-checkbox-list">
-              <li class="residence-item hotel-item">
-                <label class="hotel-check-label">
-                  <input class="hotel-check" type="radio" name="residence" value="hotel" checked> Гостиница
+          <fieldset class="checkbox">
+            <legend class="checkbox-title">Тип жилья:</legend>
+            <ul class="checkbox-list">
+              <li class="checkbox-item">
+                <label class="form-text">
+                  <input class="checkbox-input" type="radio" name="residence" value="hotel" checked> Гостиница
                 </label>
               </li>
-              <li class="residence-item motel-item">
-                <label class="motel-check-label">
-                  <input class="motel-check" type="radio" name="residence" value="motel"> Мотель
+              <li class="checkbox-item">
+                <label class="form-text">
+                  <input class="checkbox-input" type="radio" name="residence" value="motel"> Мотель
                 </label>
               </li>
-              <li class="residence-item appart-item">
-                <label class="appart-check-label">
-                  <input class="appart-check" type="radio" name="residence" value="appart"> Аппартаменты
+              <li class="checkbox-item">
+                <label class="form-text">
+                  <input class="checkbox-input" type="radio" name="residence" value="appart"> Аппартаменты
                 </label>
               </li>
             </ul>
           </fieldset>
           <!--todo Блок диапазона СТОИМОСТИ - Сделать выбор диапазона с 2 ползунками-->
-          <fieldset class="price-checkbox">
-            <legend class="price-title">Стоимость, ₽:</legend>
-            <input class="price-input-from" type="text" value="0" placeholder="от">
-            <input class="price-input-to" type="text" value="9000" placeholder="до">
+          <fieldset class="checkbox">
+            <legend class="checkbox-title">Стоимость, ₽:</legend>
+            <input class="price-input form-text" type="text" value="0" placeholder="от">
+            <input class="price-input form-text" type="text" value="9000" placeholder="до">
           </fieldset>
-          <button class="submit-search-form-btn" type="submit">Применить</button>
-          <input type="reset" name="reset" value="Сбросить">
+          <button class="form-apply form-btn" type="submit">Применить</button>
+          <input class="form-reset form-text form-btn" type="reset" name="reset" value="Сбросить">
         </form>
       </section>
       <section class="catalog">
