@@ -32,7 +32,7 @@
             <span class="counter">12</span>
           </a>
         </div>  
-        <a class="menu-btn button" href="#htl-search">Хочу сюда!</a>
+        <a class="menu-btn button brown-btn" href="#htl-search">Хочу сюда!</a>
       </div>
     </header>
 
@@ -94,107 +94,109 @@
             <input class="price-input form-text" type="text" value="0" placeholder="от">
             <input class="price-input form-text" type="text" value="9000" placeholder="до">
           </fieldset>
-          <button class="form-apply form-btn" type="submit">Применить</button>
-          <input class="form-reset form-text form-btn" type="reset" name="reset" value="Сбросить">
+          <button class="form-apply blue-btn" type="submit">Применить</button>
+          <input class="form-reset form-text" type="reset" name="reset" value="Сбросить">
         </form>
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Варианты размещения</h2>
-        <div class="search-results">
-          <p class="hotel-found-title">Найдено гостиниц: 38</p>
-          <select name="select-param" id="select-parameter" aria-label="Сортировка по стоимости">
-            <option value="chip-first-param" selected>Сначала дешёвые</option>
-            <option value="expensive-first-param">Сначала дорогие</option>
+        <div class="results">
+          <p class="results-title">Найдено гостиниц:
+            <span class="results-found">38</span>
+          </p>
+          <select class="show-first results-text" name="show-first" id="select-parameter" aria-label="Сортировка по стоимости">
+            <option value="show-option" selected>Сначала дешёвые</option>
+            <option value="show-option">Сначала дорогие</option>
           </select>
           <ul class="display-mode">
-            <li class="display-mode-btn display-cards">
-              <button class="display-btn display-btn-cards">Показать карточки</button>
+            <li class="display-item">
+              <button class="display-btn">Отобразить плиткой</button>
             </li>
-            <li class="display-mode-btn display-one">
-              <button class="display-btn display-btn-one">Показать по одному</button>
+            <li class="display-item">
+              <button class="display-btn">Отобразить слайдшоу</button>
             </li>
-            <li class="display-mode-btn display-list">
-              <button class="display-btn display-btn-list">Показать списком</button>
+            <li class="display-item">
+              <button class="display-btn">Отобразить списком</button>
             </li>
           </ul>
         </div>  
-        <ul class="result-cards">
-          <li class="amara-card result-card-item">
-            <a class="amara-card-link card-link" href="#">
-              <img class="amara-img result-card-img" src="#" alt="Amara Resort & Spa" width="" height="">
-              <h3 class="amara-title result-card-title">Amara Resort & Spa</h3>
+        <ul class="variants">
+          <li class="variants-item">
+            <a class="variants-link" href="#">
+              <img class="variants-img" src="#" alt="Amara Resort & Spa" width="" height="">
+              <h3 class="variants-title">Amara Resort & Spa</h3>
             </a>
-            <span class="residence-type residence-type-amara">Гостиница</span>
-            <span class="price-type price-type-amara">От 4000 ₽</span>
-            <a class="more-about-btn more-about-amara" href="#">Подробнее</a>
-            <button class="add-to-fav add-to-fav-amara">В избранное</button>
+            <span class="variants-type results-text">Гостиница</span>
+            <span class="price-type results-text">От 4000 ₽</span>
+            <a class="learn-more-btn button brown-btn" href="#">Подробнее</a>
+            <button class="to-favorites-btn blue-btn">В избранное</button>
             <span class="rating-stars visually-hidden">Уровень звезд</span>
-            <span class="rating-level-num">Рейтинг: 8,5</span>
+            <span class="stars-level results-text">Рейтинг: 8,5</span>
           </li>
-          <li class="desert-card result-card-item">
-            <a class="desert-card-link card-link" href="#">
-              <img class="desert-img result-card-img" src="#" alt="Desert Quail Inn" width="" height="">
-              <h3 class="desert-title result-card-title">Desert Quail Inn</h3>
+          <li class="variants-item">
+            <a class="variants-link" href="#">
+              <img class="variants-img" src="#" alt="Desert Quail Inn" width="" height="">
+              <h3 class="variants-title">Desert Quail Inn</h3>
             </a>
-            <span class="residence-type residence-type-desert">Гостиница</span>
-            <span class="price-type price-type-desert">От 3000 ₽</span>
-            <a class="more-about-btn more-about-desert" href="#">Подробнее</a>
-            <button class="add-to-fav add-to-fav-desert">В избранное</button>
+            <span class="variants-type results-text">Гостиница</span>
+            <span class="price-type results-text">От 3000 ₽</span>
+            <a class="learn-more-btn button brown-btn" href="#">Подробнее</a>
+            <button class="to-favorites-btn blue-btn">В избранное</button>
             <span class="rating-stars visually-hidden">Уровень звезд</span>
-            <span class="rating-level-num">Рейтинг: 8,9</span>
+            <span class="stars-level results-text">Рейтинг: 8,9</span>
           </li>
-          <li class="villas-card result-card-item">
-            <a class="villas-card-link card-link" href="#">
-              <img class="villas-img result-card-img" src="#" alt="villas Resort & Spa" width="" height="">
-              <h3 class="villas-title result-card-title">Villas at Poco Diablo</h3>
+          <li class="variants-item">
+            <a class="variants-link" href="#">
+              <img class="variants-img" src="#" alt="villas Resort & Spa" width="" height="">
+              <h3 class="variants-title">Villas at Poco Diablo</h3>
             </a>
-            <span class="residence-type residence-type-villas">Гостиница</span>
-            <span class="price-type price-type-villas">От 2000 ₽</span>
-            <a class="more-about-btn more-about-villas" href="#">Подробнее</a>
-            <button class="add-to-fav add-to-fav-villas in-fav">В избранном</button>
+            <span class="variants-type results-text">Гостиница</span>
+            <span class="price-type results-text">От 2000 ₽</span>
+            <a class="learn-more-btn button brown-btn" href="#">Подробнее</a>
+            <button class="to-favorites-btn blue-btn green-btn">В избранном</button>
             <span class="rating-stars visually-hidden">Уровень звезд</span>
-            <span class="rating-level">Рейтинг: 9,2</span>
+            <span class="stars-level results-text">Рейтинг: 9,2</span>
           </li>
-          <li class="greentree-card result-card-item">
-            <a class="greentree-card-link card-link" href="#">
-              <img class="greentree-img result-card-img" src="#" alt="GreenTree Inn" width="" height="">
-              <h3 class="greentree-title result-card-title">GreenTree Inn</h3>
+          <li class="variants-item">
+            <a class="variants-link" href="#">
+              <img class="variants-img" src="#" alt="GreenTree Inn" width="" height="">
+              <h3 class="variants-title">GreenTree Inn</h3>
             </a>
-            <span class="residence-type residence-type-greentree">Гостиница</span>
-            <span class="price-type price-type-greentree">От 3000 ₽</span>
-            <a class="more-about-btn more-about-greentree" href="#">Подробнее</a>
-            <button class="add-to-fav add-to-fav-greentree">В избранное</button>
+            <span class="variants-type results-text">Гостиница</span>
+            <span class="price-type results-text">От 3000 ₽</span>
+            <a class="learn-more-btn button brown-btn" href="#">Подробнее</a>
+            <button class="to-favorites-btn blue-btn">В избранное</button>
             <span class="rating-stars visually-hidden">Уровень звезд</span>
-            <span class="rating-level">Рейтинг: 9,2</span>
+            <span class="stars-level results-text">Рейтинг: 9,2</span>
           </li>
         </ul>
-        <a class="show-more-btn" href="#">Загрузить еще</a>
+        <a class="show-more-btn blue-btn" href="#">Загрузить еще</a>
         <ul class="pagination">
-          <li class="pagination-list pagination-first">
-            <a class="pagination-link pagination-first-link" href="#">1</a>
+          <li class="pagination-item">
+            <a class="pagination-link blue-btn active-page" href="#">1</a>
           </li>
-          <li class="pagination-list pagination-second">
-            <a class="pagination-link pagination-second-link" href="#">2</a>
+          <li class="pagination-item">
+            <a class="pagination-link blue-btn" href="#">2</a>
           </li>
-          <li class="pagination-list pagination-third">
-            <a class="pagination-link pagination-third-link" href="#">3</a>
+          <li class="pagination-item">
+            <a class="pagination-link blue-btn" href="#">3</a>
           </li>
-          <li class="pagination-list pagination-fourth">
-            <a class="pagination-link pagination-fourth-link" href="#">4</a>
+          <li class="pagination-item">
+            <a class="pagination-link blue-btn" href="#">4</a>
           </li>
-          <li class="pagination-list pagination-fifth">
-            <a class="pagination-link pagination-fifth-link" href="#">...</a>
+          <li class="pagination-item">
+            <a class="pagination-link blue-btn" href="#">...</a>
           </li>
-          <li class="pagination-list pagination-last">
-            <a class="pagination-link pagination-last-link" href="#">10</a>
+          <li class="pagination-item">
+            <a class="pagination-link blue-btn" href="#">10</a>
           </li>
         </ul>
-        <div class="how-many-display">
-          <h3 class="how-many-display-title">Гостиниц на странице:</h3>
-          <select name="how-many" id="how-many">
-            <option class="view-four" value="four">4</option>
-            <option class="view-six" value="six">6</option>
-            <option class="view-eight" value="eight">8</option>
+        <div class="on-display">
+          <h3 class="on-display-title results-text">Гостиниц на странице:</h3>
+          <select class="on-display-select results-text" name="on-display" id="on-display">
+            <option class="on-display-option" value="four">4</option>
+            <option class="on-display-option" value="six">6</option>
+            <option class="on-display-option" value="eight">8</option>
           </select>
         </div>
       </section>
@@ -203,7 +205,7 @@
         <p class="subscribe-info">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
         <form class="subscribe-form" action="#" method="post">
           <input class="subscribe-input input" type="email" name="e-mail" placeholder="Ваш e-mail" aria-label="Подпишитесь на рассылку" required>
-          <button class="subscribe-btn" type="submit">Подписаться</button>
+          <button class="subscribe-btn blue-btn" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
