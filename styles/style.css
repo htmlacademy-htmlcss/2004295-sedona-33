@@ -19,6 +19,7 @@ body {
   font-weight: 400;
   margin: 0px 40px;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  min-width: 1200px;
 }
 
 .visually-hidden {
@@ -49,11 +50,16 @@ body {
 .page-header {
   display: flex;
   min-height: 65px;
-  margin: 0px 70px;
-  position: relative;
+  padding: 0px 70px;
 }
 
-.header-logo {
+.logo-link {
+  width: 139px;
+  position: relative;
+  margin-right: 47px;
+}
+
+.logo-img {
   position: absolute;
 }
 
@@ -61,7 +67,6 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
-  margin-left: 186px;
 }
 
 .nav-list {
@@ -160,7 +165,6 @@ body {
   background-repeat: no-repeat;
   display: block;
   position: absolute;
-  min-width: 1200px;
   height: 57px;
 }
 
@@ -198,25 +202,15 @@ body {
 .advantage-blue {
   color: #FFFFFF;
   background-color: #83B3D3;
-  position: relative;
+  background-repeat: no-repeat;
 }
 
-.real-town::after,
-.evil-bridge::before {
-  content: "";
-  position: absolute;
-  width: 800px;
-  height: 100%;
-}
-
-.real-town::after {
+.real-town {
   background-image: url(/images/index/real-town.jpg);
-  left: 100%;
 }
 
-.evil-bridge::before {
+.evil-bridge {
   background-image: url(/images/index/evil-bridge.jpg);
-  right: 100%;
 }
 
 .advantage-title {
@@ -473,7 +467,7 @@ body {
 .catalog-title {
   font-weight: 700;
   font-size: 60px;
-  line-height: 77.64px;
+  line-height: 78px;
   margin: 0px;
 }
 
@@ -496,8 +490,9 @@ body {
 }
 
 .bread-home {
-  display: inline-block;
+  display: flex;
   background-image: url(/images/catalog/breadcrumps-home.svg);
+  align-items: center;
   width: 12px;
   height: 12px;
   position: relative;
@@ -529,6 +524,11 @@ body {
   font-size: 20px;
   font-weight: 700;
   line-height: 26px;
+  padding: 0px;
+}
+
+.checkbox-input {
+  margin: 0px;
 }
 
 .form-text {
@@ -537,10 +537,12 @@ body {
 }
 
 .price-input {
+  box-sizing: border-box;
+  max-width: 144px;
   background-color: inherit;
   border: 2px solid #FFFFFF;
   color: #FFFFFF;
-  padding: 14px 0px 11px 19px;
+  padding: 14px 19px 11px 19px;
 }
 
 .form-apply {
@@ -549,6 +551,7 @@ body {
   border-radius: 4px;
   width: 160px;
   height: 48px;
+  padding: 0px;
 }
 
 .form-reset {
@@ -607,29 +610,26 @@ body {
   margin: 0px;
 }
 
-.learn-more-btn {
+.variants-btn {
   font-size: 16px;
   line-height: 21px;
   border-radius: 4px;
   padding: 9px 0px 10px;
+}
+
+.learn-more-btn {
   min-width: 133px;
 }
 
 .to-favorites-btn {
-  font-size: 16px;
-  line-height: 21px;
-  border-radius: 4px;
-  padding: 9px 0px 10px;
   min-width: 141px;
 }
 
-.stars-level {
+.rating-level {
   display: inline-block;
   text-align: center;
   text-transform: uppercase;
   background-color: #F2F2F2;
-  border-radius: 4px;
-  padding: 9px 0px 10px;
   min-width: 160px;
 }
 
@@ -637,8 +637,6 @@ body {
   display: inline-block;
   text-align: center;
   text-decoration: none;
-  font-size: 16px;
-  line-height: 21px;
   min-width: 620px;
   padding: 17px 0px;
 }
