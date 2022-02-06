@@ -642,7 +642,7 @@ ul {
   flex-wrap: wrap;
   box-sizing: border-box;
 
-  border: 1px dashed red;
+  outline: 1px dashed red;
 }
 
 .variants-item {
@@ -655,7 +655,7 @@ ul {
   padding-top: 20px;
   padding-bottom: 20px;
 
-  border: 1px dashed green;
+  outline: 1px dashed green;
 }
 
 .variants-link {
