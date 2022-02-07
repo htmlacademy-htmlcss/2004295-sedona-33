@@ -640,7 +640,10 @@ ul {
   margin: 0 72px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 10px;
   box-sizing: border-box;
+  flex-basis: 1056px;
 
   outline: 1px dashed red;
 }
@@ -656,6 +659,10 @@ ul {
   padding-bottom: 20px;
 
   outline: 1px dashed green;
+}
+
+.variants-img {
+  size: 100%;
 }
 
 .variants-link {
