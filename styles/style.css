@@ -507,6 +507,12 @@ ul {
   margin: 0px;
 }
 
+.checkbox ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 13px;
+}
+
 .form-text {
   font-size: 18px;
   line-height: 23px;
@@ -527,6 +533,7 @@ ul {
   font-weight: 700;
   line-height: 26px;
   margin-bottom: 30px;
+  padding: 0;
 }
 
 .checkbox-input {
@@ -536,6 +543,9 @@ ul {
 
 .checkbox-price {
   align-self: flex-start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 48px;
 }
 
 .checkbox-title-price {
@@ -549,7 +559,12 @@ ul {
   color: #FFFFFF;
   padding: 14px 19px 11px 19px;
   max-width: 144px;
-  max-height: 48px;
+}
+
+.form-btn-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
 }
 
 .form-apply {
