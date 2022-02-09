@@ -244,6 +244,7 @@ body {
 .welcome-block {
   background: url(/images/index/before-welcome.svg) bottom/100% no-repeat,
   url(/images/index/index-background.jpg) 100%/cover no-repeat;
+  background-color: #000000;
   padding: 51px 371px 82px;
 }
 
@@ -389,17 +390,15 @@ body {
 }
 
 .subscribe-index {
-  background-image: url(/images/index/subscribe-bg.jpg);
+  background: url(/images/index/subscribe-bg.jpg) 100%/cover no-repeat;
   background-color: #000000;
-  background-repeat: no-repeat;
-  background-size: 100% auto;
   color: #FFFFFF;
-  padding: 94px 200px;
+  padding: 94px 200px 93px;
   text-align: center;
 }
 
 .subscribe-inner {
-  margin-bottom: 141px;
+  padding: 0 200px 140px;
   text-align: center;
 }
 
@@ -409,18 +408,16 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   margin: 0px;
-  margin-bottom: 29px;
 }
 
 .subscribe-subtitle {
   font-size: 22px;
   line-height: 26px;
-  margin: 0px;
-  margin-bottom: 46px;
+  margin: 29px 0px 46px;
 }
 
 .subscribe-subtitle-inner {
-  margin-top: 46px;
+  margin: 46px 0px;
 }
 
 .subscribe-form {
