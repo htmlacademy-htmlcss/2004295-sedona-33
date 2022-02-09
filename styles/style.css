@@ -361,7 +361,7 @@ body {
 }
 
 .search-block {
-  padding: 91px 0 93px;
+  padding: 91px 240px 93px;
 }
 
 .search-title {
@@ -370,12 +370,14 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   margin: 0px;
+  margin-bottom: 29px;
 }
 
 .search-subtitle {
   font-size: 22px;
   line-height: 26px;
-  margin: 29px 0px 56px;
+  margin: 0px;
+  margin-bottom: 56px;
 }
 
 .search-btn {
@@ -392,7 +394,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100% auto;
   color: #FFFFFF;
-  padding: 94px 0px;
+  padding: 94px 200px;
   text-align: center;
 }
 
@@ -407,12 +409,14 @@ body {
   line-height: 36px;
   text-transform: uppercase;
   margin: 0px;
+  margin-bottom: 29px;
 }
 
 .subscribe-subtitle {
   font-size: 22px;
   line-height: 26px;
-  margin: 29px 0px 46px;
+  margin: 0px;
+  margin-bottom: 46px;
 }
 
 .subscribe-subtitle-inner {
