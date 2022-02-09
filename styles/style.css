@@ -436,6 +436,7 @@ body {
 }
 
 .subscribe-btn {
+  font-family: "PT Sans";
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   padding: 0px;
@@ -448,20 +449,21 @@ body {
 .menu-select {
   background: url(/images/catalog/catalog-background.jpg) 100%/cover no-repeat #000000;
   color: #FFFFFF;
-  padding: 35px 72px 83px 71px;
+  padding: 36px 72px 83px 71px;
 }
 
 .catalog-title {
   font-weight: 700;
   font-size: 60px;
-  line-height: 78px;
+  line-height: 70px;
   margin: 0px;
 }
 
 .breadcrumps {
   display: flex;
   align-items: center;
-  margin: 5px 0px 45px;
+  margin: 0px;
+  margin-bottom: 45px;
 }
 
 .breadcrumps-link {
@@ -488,6 +490,7 @@ body {
   height: 8px;
   position: absolute;
   left: 23px;
+
 }
 
 .checkbox {
@@ -564,9 +567,11 @@ body {
 .form-btn-wrapper {
   display: flex;
   flex-direction: column;
+  align-self: flex-end;
 }
 
 .form-apply {
+  font-family: "PT Sans";
   font-size: 16px;
   line-height: 21px;
   border-radius: 4px;
@@ -577,6 +582,7 @@ body {
 }
 
 .form-reset {
+  font-family: "PT Sans";
   background-color: inherit;
   color: #FFFFFF;
   cursor: pointer;
@@ -611,7 +617,8 @@ body {
 }
 
 .show-first {
-  padding: 12px 0px 13px 19px;
+  font-family: "PT Sans";
+  padding: 12px 13px;
   min-width: 287px;
   max-height: 48px;
   border: 2px solid #E5E5E5;
@@ -627,6 +634,10 @@ body {
 .display-item {
   display: flex;
   align-items: center;
+}
+
+.display-item:not(:first-child) {
+  margin-left: 8px;
 }
 
 .display-btn {
@@ -716,6 +727,8 @@ body {
 }
 
 .load-more-btn {
+  font-size: 20px;
+  line-height: 26px;
   display: block;
   text-align: center;
   text-decoration: none;
@@ -782,7 +795,7 @@ body {
 
 .on-display-select {
   min-width: 160px;
-  padding: 13px 0px 12px 17px;
+  padding: 12px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
 }
@@ -813,6 +826,7 @@ body {
 }
 
 .input {
+  font-family: "PT Sans";
   background-color: #F2F2F2;
   border: none;
 }
