@@ -23,7 +23,7 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: 400;
   color: #000000;
-  margin: 0;
+  margin: 0px;
   height: 100%;
 }
 
@@ -81,7 +81,7 @@ body {
 }
 
 .del_padding {
-  padding: 0;
+  padding: 0px;
 }
 
 /** header **/
@@ -110,7 +110,7 @@ body {
 .nav-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0;
+  margin: 0px;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -143,7 +143,7 @@ body {
 .favorites {
   display: flex;
   align-items: center;
-  padding: 0 12px;
+  padding: 0px 12px;
 }
 
 .user-link {
@@ -257,14 +257,14 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 0;
+  margin: 0px;
   margin-bottom: 31px;
 }
 
 .main-subtitle {
   font-size: 22px;
   line-height: 36px;
-  margin: 0;
+  margin: 0px;
 }
 
 .advantage {
@@ -398,7 +398,7 @@ body {
 }
 
 .subscribe-inner {
-  padding: 0 200px 140px;
+  padding: 0px 200px 140px;
   text-align: center;
 }
 
@@ -522,7 +522,7 @@ body {
   font-weight: 700;
   line-height: 26px;
   margin-bottom: 30px;
-  padding: 0;
+  padding: 0px;
 }
 
 .checkbox-input {
@@ -620,7 +620,7 @@ body {
 
 .display-mode {
   display: flex;
-  margin: 0;
+  margin: 0px;
   margin-left: 81px;
 }
 
@@ -634,7 +634,7 @@ body {
   box-sizing: border-box;
   width: 48px;
   height: 48px;
-  padding: 0;
+  padding: 0px;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   background-color: inherit;
@@ -661,7 +661,8 @@ body {
   row-gap: 10px;
   box-sizing: border-box;
   flex-basis: 1056px;
-  margin: 0;
+  margin: 0px;
+  margin-bottom: 54px;
 
   outline: 1px dashed red;
 }
@@ -673,8 +674,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 0px;
 
   outline: 1px dashed green;
 }
@@ -727,10 +727,10 @@ body {
 }
 
 .load-more-wrapper {
-  padding: 30px 0;
+  padding: 30px 218px;
   border-top: 1px solid #E5E5E5;
   border-bottom: 1px solid #E5E5E5;
-  margin: 34px 72px 30px;
+  margin-bottom: 30px;
 }
 
 .green-btn {
@@ -741,7 +741,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 72px;
+  padding: 0px 72px;
 }
 
 .pagination {
