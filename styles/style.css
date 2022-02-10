@@ -245,7 +245,7 @@ body {
   background: url(/images/index/before-welcome.svg) bottom/100% no-repeat,
   url(/images/index/index-background.jpg) 100%/cover no-repeat;
   background-color: #000000;
-  padding: 51px 371px 82px;
+  padding: 51px 371px 78px;
 }
 
 .main-title-wrapper {
@@ -306,7 +306,6 @@ body {
 .num {
   margin: 0px;
 }
-
 .advantage-description {
   font-size: 18px;
   line-height: 21px;
@@ -762,7 +761,7 @@ body {
 }
 
 .pagination-item:not(:last-child) {
-  margin-right: 7px;
+  margin-right: 8px;
 }
 
 .pagination-link {
