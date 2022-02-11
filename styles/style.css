@@ -259,9 +259,9 @@ body {
 .welcome-block {
   padding: 51px 371px 78px;
 
+  background-color: #000000;
   background: url(/images/index/before-welcome.svg) bottom/100% no-repeat,
   url(/images/index/index-background.jpg) 100%/cover no-repeat;
-  background-color: #000000;
 }
 
 .main-title-wrapper {
@@ -422,8 +422,8 @@ body {
   color: #FFFFFF;
   text-align: center;
 
-  background: url(/images/index/subscribe-bg.jpg) 100%/cover no-repeat;
   background-color: #000000;
+  background: url(/images/index/subscribe-bg.jpg) 100%/cover no-repeat;
 }
 
 .subscribe-inner {
@@ -472,7 +472,7 @@ body {
 .subscribe-btn {
   padding: 0;
 
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 20px;
   line-height: 26px;
 
@@ -487,6 +487,7 @@ body {
 
   color: #FFFFFF;
 
+  background-color: #000000;
   background: url(/images/catalog/catalog-background.jpg) 100%/cover no-repeat #000000;
 }
 
@@ -623,7 +624,7 @@ body {
   padding: 0;
   margin-bottom: 20px;
 
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   font-size: 16px;
   line-height: 21px;
 
@@ -633,7 +634,7 @@ body {
 .form-reset {
   padding: 0;
 
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
   color: #FFFFFF;
 
   background-color: inherit;
@@ -673,7 +674,7 @@ body {
   min-width: 287px;
   max-height: 48px;
 
-  font-family: "PT Sans";
+  font-family: "PT Sans", Arial, sans-serif;
 
   border: 2px solid #E5E5E5;
   border-radius: 4px;
@@ -896,8 +897,8 @@ body {
 }
 
 .input {
-  font-family: "PT Sans";
-  
+  font-family: "PT Sans", Arial, sans-serif;
+
   background-color: #F2F2F2;
   border: none;
 }
