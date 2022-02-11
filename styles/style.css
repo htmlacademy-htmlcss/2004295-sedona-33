@@ -199,6 +199,7 @@ body {
 
 .socials-list {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .social-link-item {
