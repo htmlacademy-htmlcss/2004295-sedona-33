@@ -23,19 +23,19 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: 400;
   color: #000000;
-  margin: 0px;
+  margin: 0;
   height: 100%;
 }
 
 .page {
   width: 1200px;
-  margin: 0px auto;
+  margin: 0 auto;
   min-height: 100%;
   display: flex;
   flex-direction: column;
 
   background-color: #FFFFFF;
-  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .main-container {
@@ -81,14 +81,14 @@ body {
 }
 
 .del_padding {
-  padding: 0px;
+  padding: 0;
 }
 
 /** header **/
 
 .page-header {
   display: flex;
-  padding: 0px 70px;
+  padding: 0 70px;
   min-height: 65px;
 }
 
@@ -110,7 +110,7 @@ body {
 .nav-list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0px;
+  margin: 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
@@ -143,7 +143,7 @@ body {
 .favorites {
   display: flex;
   align-items: center;
-  padding: 0px 12px;
+  padding: 0 12px;
 }
 
 .user-link {
@@ -258,14 +258,14 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 0px;
+  margin: 0;
   margin-bottom: 31px;
 }
 
 .main-subtitle {
   font-size: 22px;
   line-height: 36px;
-  margin: 0px;
+  margin: 0;
 }
 
 .advantage {
@@ -301,16 +301,16 @@ body {
   font-size: 24px;
   line-height: 28px;
   text-transform: uppercase;
-  margin: 0px;
+  margin: 0;
 }
 
 .num {
-  margin: 0px;
+  margin: 0;
 }
 .advantage-description {
   font-size: 18px;
   line-height: 21px;
-  margin: 0px 75px;
+  margin: 0 75px;
 }
 
 .with-icon .advantage-description {
@@ -318,12 +318,12 @@ body {
 }
 
 .advantage-blue .advantage-description {
-  margin: 0px 90px;
+  margin: 0 90px;
 }
 
 .advantages-list {
-  padding-left: 0px;
-  margin: 0px;
+  padding-left: 0;
+  margin: 0;
 }
 
 .advantages-list li:nth-child(odd) {
@@ -340,7 +340,7 @@ body {
   background-image: url(/images/index/icon-house.svg);
   width: 75px;
   height: 72px;
-  margin: 0px auto 23px;
+  margin: 0 auto 23px;
 }
 
 .icon-food::before {
@@ -349,7 +349,7 @@ body {
   background-image: url(/images/index/icon-food.svg);
   width: 74px;
   height: 70px;
-  margin: 0px auto 23px;
+  margin: 0 auto 23px;
 }
 
 .icon-suv::before {
@@ -358,7 +358,7 @@ body {
   background-image: url(/images/index/icon-suv.svg);
   width: 64px;
   height: 76px;
-  margin: 0px auto 23px;
+  margin: 0 auto 23px;
 }
 
 .search-block {
@@ -370,14 +370,14 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 0px;
+  margin: 0;
   margin-bottom: 29px;
 }
 
 .search-subtitle {
   font-size: 22px;
   line-height: 26px;
-  margin: 0px;
+  margin: 0;
   margin-bottom: 56px;
 }
 
@@ -385,7 +385,7 @@ body {
   font-size: 20px;
   line-height: 36px;
   min-width: 575px;
-  padding: 15px 0px;
+  padding: 15px 0;
   border-radius: 10px;
 }
 
@@ -398,7 +398,7 @@ body {
 }
 
 .subscribe-inner {
-  padding: 0px 200px 140px;
+  padding: 0 200px 140px;
   text-align: center;
 }
 
@@ -407,17 +407,17 @@ body {
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
-  margin: 0px;
+  margin: 0;
 }
 
 .subscribe-subtitle {
   font-size: 22px;
   line-height: 26px;
-  margin: 29px 0px 46px;
+  margin: 29px 0 46px;
 }
 
 .subscribe-subtitle-inner {
-  margin: 46px 0px;
+  margin: 46px 0;
 }
 
 .subscribe-form {
@@ -430,7 +430,7 @@ body {
 .subscribe-input {
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
-  padding: 0px 19px 0px 22px;
+  padding: 0 19px 0 22px;
   font-size: 18px;
   line-height: 26px;
 }
@@ -439,7 +439,7 @@ body {
   font-family: "PT Sans";
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  padding: 0px;
+  padding: 0;
   font-size: 20px;
   line-height: 26px;
 }
@@ -456,13 +456,13 @@ body {
   font-weight: 700;
   font-size: 60px;
   line-height: 70px;
-  margin: 0px;
+  margin: 0;
 }
 
 .breadcrumps {
   display: flex;
   align-items: center;
-  margin: 0px;
+  margin: 0;
   margin-bottom: 45px;
 }
 
@@ -495,8 +495,8 @@ body {
 
 .checkbox {
   border: none;
-  padding: 0px;
-  margin: 0px;
+  padding: 0;
+  margin: 0;
 }
 
 .checkbox ul {
@@ -511,7 +511,7 @@ body {
 }
 
 .search-form ul {
-  margin: 0px;
+  margin: 0;
 }
 
 .search-form {
@@ -525,11 +525,11 @@ body {
   font-weight: 700;
   line-height: 26px;
   margin-bottom: 30px;
-  padding: 0px;
+  padding: 0;
 }
 
 .checkbox-input {
-  margin: 0px;
+  margin: 0;
   margin-right: 19px;
 }
 
@@ -577,7 +577,7 @@ body {
   border-radius: 4px;
   width: 160px;
   height: 48px;
-  padding: 0px;
+  padding: 0;
   margin-bottom: 20px;
 }
 
@@ -587,7 +587,7 @@ body {
   color: #FFFFFF;
   cursor: pointer;
   border: none;
-  padding: 0px;
+  padding: 0;
 }
 
 .variants-container {
@@ -612,7 +612,7 @@ body {
   line-height: 39px;
   font-weight: 700;
   text-transform: uppercase;
-  margin: 0px;
+  margin: 0;
   margin-right: auto;
 }
 
@@ -627,7 +627,7 @@ body {
 
 .display-mode {
   display: flex;
-  margin: 0px;
+  margin: 0;
   margin-left: 81px;
 }
 
@@ -645,7 +645,7 @@ body {
   box-sizing: border-box;
   width: 48px;
   height: 48px;
-  padding: 0px;
+  padding: 0;
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   background-color: inherit;
@@ -672,7 +672,7 @@ body {
   row-gap: 10px;
   box-sizing: border-box;
   flex-basis: 1056px;
-  margin: 0px;
+  margin: 0;
   margin-bottom: 54px;
 
   outline: 1px dashed red;
@@ -685,7 +685,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 20px 0px;
+  padding: 20px 0;
 
   outline: 1px dashed green;
 }
@@ -699,13 +699,13 @@ body {
   font-size: 24px;
   line-height: 31px;
   font-weight: 700;
-  margin: 16px 0px;
+  margin: 16px 0;
 }
 
 .variants-btn {
   font-size: 16px;
   line-height: 21px;
-  padding: 9px 0px 10px;
+  padding: 9px 0 10px;
 }
 
 .learn-more-btn {
@@ -733,7 +733,7 @@ body {
   text-align: center;
   text-decoration: none;
   max-width: 620px;
-  padding: 17px 0px;
+  padding: 17px 0;
   border-radius: 10px;
   margin-left: auto;
   margin-right: auto;
@@ -758,7 +758,7 @@ body {
 
 .pagination {
   display: flex;
-  margin: 0px;
+  margin: 0;
 }
 
 .pagination-item:not(:last-child) {
@@ -789,7 +789,7 @@ body {
 
 .on-display-title {
   font-weight: 400;
-  margin: 0px;
+  margin: 0;
   margin-right: 51px;
 }
 
