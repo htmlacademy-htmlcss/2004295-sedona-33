@@ -888,7 +888,6 @@ body {
 
 .brown-btn:focus {
   outline: 3px solid #83B3D3;
-  border-radius: 4px;
 }
 
 .brown-btn:active {
@@ -947,7 +946,6 @@ body {
 
 .input:focus {
   outline: 2px solid #000000;
-  border-radius: 4px;
   background-color: #FFFFFF;
 }
 
