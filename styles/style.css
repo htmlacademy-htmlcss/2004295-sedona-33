@@ -149,8 +149,7 @@ body {
   max-width: 300px;
 }
 
-.search,
-.favorites {
+.user-menu div {
   display: flex;
   align-items: center;
   padding: 0 12px;
@@ -290,6 +289,7 @@ body {
   flex-direction: column;
   justify-content: center;
   min-height: 384px;
+  padding: 0 75px;
 
   font-size: 18px;
   line-height: 21px;
@@ -300,6 +300,8 @@ body {
 }
 
 .advantage-blue {
+  padding: 0 90px;
+
   color: #FFFFFF;
 
   background-color: #83B3D3;
@@ -307,6 +309,7 @@ body {
 }
 
 .real-town {
+  background-position-x: right;
   background-image: url(/images/index/real-town.jpg);
 }
 
@@ -327,18 +330,14 @@ body {
   margin: 0;
 }
 .advantage-description {
-  margin: 0 75px;
+  margin: 0;
 
   font-size: 18px;
   line-height: 21px;
 }
 
 .with-icon .advantage-description {
-  margin: 20px 75px 0px;
-}
-
-.advantage-blue .advantage-description {
-  margin: 0 90px;
+  margin-top: 20px;
 }
 
 .advantages-list {
@@ -378,7 +377,7 @@ body {
   display: block;
   width: 64px;
   height: 76px;
-  margin: 0 auto 23px;
+  margin: 0 auto 21px;
 
   background-image: url(/images/index/icon-suv.svg);
   content: "";
@@ -847,6 +846,7 @@ body {
 .active-page {
   color: #000000;
 
+  cursor: pointer;
   background-color: #F2F2F2;
 }
 
@@ -880,20 +880,57 @@ body {
   color: rgba(117, 98, 87, 0.3);
 }
 
-.brown-btn:hover {
+.brown-btn:hover,
+.brown-btn:focus,
+.brown-btn:active {
   background-color: #615048;
 }
 
 .brown-btn:focus {
-  background-color: #615048;
   outline: 3px solid #83B3D3;
+  border-radius: 4px;
 }
 
 .brown-btn:active {
+  outline: none;
   color: rgba(255, 255, 255, 0.3);
+}
 
-  background-color: #615048;
-  border: none;
+.blue-btn:hover,
+.blue-btn:active,
+.blue-btn:focus {
+  background-color: #68A2CA;
+}
+
+.blue-btn:focus {
+  outline: 3px solid #756257;
+}
+
+.blue-btn:active {
+  outline: none;
+}
+
+.green-btn:hover,
+.green-btn:active,
+.green-btn:focus {
+  background-color: #6C9E42;
+}
+
+.green-btn:focus {
+  outline: 3px solid #756257;
+}
+
+.green-btn:active {
+  outline: none;
+}
+
+.to-favorites-btn:hover:not(.green-btn),
+.to-favorites-btn:active:not(.green-btn) {
+  outline: 1px solid #756257;
+}
+
+.button_opacity:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .input {
@@ -903,13 +940,35 @@ body {
   border: none;
 }
 
-.input:hover {
+.input:hover,
+.input:focus {
   background-color: #E5E5E5;
 }
 
 .input:focus {
+  outline: 2px solid #000000;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+}
+
+.input:active {
   background-color: #E5E5E5;
   outline: 3px solid #83B3D3;
+}
+
+.footer-text-cond:hover,
+.footer-text-cond:focus {
+  color: #756257;
+}
+
+.footer-text-cond:focus {
+  border: 3px solid #83B3D3;
+  border-radius: 10px;
+}
+
+.footer-text-cond:active {
+  border: none;
+  color: rgba(117, 98, 87, 0.3);
 }
 
 /** Grid **/
