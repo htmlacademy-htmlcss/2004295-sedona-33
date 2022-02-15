@@ -284,6 +284,12 @@ body {
   line-height: 36px;
 }
 
+/** Grid **/
+.advantages-list {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+}
+
 .advantage {
   display: flex;
   flex-direction: column;
@@ -309,11 +315,15 @@ body {
 }
 
 .real-town {
+  grid-column: 1/-1;
+
   background-position-x: right;
   background-image: url(/images/index/real-town.jpg);
 }
 
 .evil-bridge {
+  grid-column: 1/-1;
+
   background-image: url(/images/index/evil-bridge.jpg);
 }
 
@@ -329,6 +339,7 @@ body {
 .num {
   margin: 0;
 }
+
 .advantage-description {
   margin: 0;
 
@@ -345,7 +356,7 @@ body {
   margin: 0;
 }
 
-.advantages-list li:nth-child(odd) {
+.advantages-list li:nth-child(2n) {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -976,23 +987,4 @@ p.rating-wrapper {
 
 .footer-text-cond:active {
   color: rgba(117, 98, 87, 0.3);
-}
-
-/** Grid **/
-
-.advantages-container {
-  display: grid;
-  grid-template-rows: repeat(4, auto);
-}
-
-.list1 {
-  grid-row: 2/3;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.list2 {
-  grid-row: 4/5;
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
 }
