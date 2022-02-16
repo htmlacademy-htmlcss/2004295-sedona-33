@@ -207,7 +207,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 72px;
+  padding: 35px 72px;
 }
 
 .socials-list {
@@ -284,29 +284,26 @@ body {
   line-height: 36px;
 }
 
-/** Grid **/
-.advantages-list {
+.advantage-container {
   display: grid;
   grid-template-columns: repeat(3, 400px);
+  padding: 0;
+  margin: 0;
 }
 
 .advantage {
+  box-sizing: border-box;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
-  justify-content: center;
   min-height: 384px;
-  padding: 0 75px;
 
   font-size: 18px;
   line-height: 21px;
 }
 
-.advantage:not(.with-icon) {
-  row-gap: 30px;
-}
-
 .advantage-blue {
-  padding: 0 90px;
+  grid-column: 1/-1;
 
   color: #FFFFFF;
 
@@ -314,17 +311,29 @@ body {
   background-repeat: no-repeat;
 }
 
-.real-town {
-  grid-column: 1/-1;
+.blue-adv-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+}
 
-  background-position-x: right;
+.real-town {
   background-image: url(/images/index/real-town.jpg);
+  background-position-x: right;
+}
+
+.real-town-wrapper {
+  align-self: flex-start;
+  margin: 97px auto auto 90px;
 }
 
 .evil-bridge {
-  grid-column: 1/-1;
-
   background-image: url(/images/index/evil-bridge.jpg);
+}
+
+.evil-bridge-wrapper {
+  align-self: flex-end;
+  margin: 98px 90px auto auto;
 }
 
 .advantage-title {
@@ -337,7 +346,7 @@ body {
 }
 
 .num {
-  margin: 0;
+  margin: 30px 0;
 }
 
 .advantage-description {
@@ -347,16 +356,11 @@ body {
   line-height: 21px;
 }
 
-.with-icon .advantage-description {
-  margin-top: 20px;
+.with-icon .advantage-title {
+  margin-bottom: 20px;
 }
 
-.advantages-list {
-  padding-left: 0;
-  margin: 0;
-}
-
-.advantages-list li:nth-child(2n) {
+.advantage-container li:nth-child(2n) {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -374,28 +378,44 @@ body {
   content: "";
 }
 
+.house {
+  padding: 89px 110px 79px;
+}
+
 .icon-food::before {
   display: block;
   width: 74px;
   height: 70px;
-  margin: 0 auto 24px;
+  margin: 0 auto 23px;
 
   background-image: url(/images/index/icon-food.svg);
   content: "";
+}
+
+.food {
+  padding: 91px 75px 79px;
 }
 
 .icon-suv::before {
   display: block;
   width: 64px;
   height: 76px;
-  margin: 0 auto 21px;
+  margin: 0 auto 23px;
 
   background-image: url(/images/index/icon-suv.svg);
   content: "";
 }
 
+.suv {
+  padding: 85px 75px 79px;
+}
+
+.adv-last-row {
+  padding: 98px 75px 108px;
+}
+
 .search-block {
-  padding: 91px 240px 93px;
+  padding: 89px 240px 93px;
 }
 
 .search-title {
@@ -418,7 +438,7 @@ body {
 
 .search-btn {
   min-width: 575px;
-  padding: 15px 0;
+  padding: 15px 0 9px;
 
   font-size: 20px;
   line-height: 36px;
@@ -427,7 +447,7 @@ body {
 }
 
 .subscribe-index {
-  padding: 94px 200px 93px;
+  padding: 94px 200px 94px;
 
   color: #FFFFFF;
   text-align: center;
@@ -437,7 +457,7 @@ body {
 }
 
 .subscribe-inner {
-  padding: 0 200px 135px;
+  padding: 0 200px 141px;
 
   text-align: center;
 }
