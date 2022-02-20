@@ -197,7 +197,7 @@ body {
 }
 
 .search-tool {
-  background-image: url(images/general/search.svg);
+  background-image: url("images/general/search.svg");
   width: 20px;
   height: 19px;
 }
@@ -205,7 +205,7 @@ body {
 .fav-tool {
   position: relative;
 
-  background-image: url(images/general/favorite.svg);
+  background-image: url("images/general/favorite.svg");
   width: 19px;
   height: 17px;
 }
@@ -261,19 +261,19 @@ body {
 }
 
 .twitter-link {
-  background-image: url(images/general/twitter.svg);
+  background-image: url("images/general/twitter.svg");
   width: 18px;
   height: 15px;
 }
 
 .facebook-link {
-  background-image: url(images/general/facebook.svg);
+  background-image: url("images/general/facebook.svg");
   width: 10px;
   height: 18px;
 }
 
 .youtube-link {
-  background-image: url(images/general/youtube.svg);
+  background-image: url("images/general/youtube.svg");
   width: 20px;
   height: 16px;
 }
@@ -307,8 +307,8 @@ body {
   padding: 51px 371px 78px;
 
   background-color: #000000;
-  background: url(images/index/before-welcome.svg) bottom/100% no-repeat,
-  url(images/index/index-background.jpg) 100%/cover no-repeat;
+  background: url("images/index/before-welcome.svg") bottom/100% no-repeat,
+  url("images/index/index-background.jpg") 100%/cover no-repeat;
 }
 
 .main-title-wrapper {
@@ -366,7 +366,7 @@ body {
 }
 
 .real-town {
-  background-image: url("../images/index/real-town.jpg");
+  background-image: url("images/index/real-town.jpg");
   background-position-x: right;
 }
 
@@ -376,7 +376,7 @@ body {
 }
 
 .evil-bridge {
-  background-image: url("/images/index/evil-bridge.jpg");
+  background-image: url("images/index/evil-bridge.jpg");
 }
 
 .evil-bridge-wrapper {
@@ -422,7 +422,7 @@ body {
   height: 72px;
   margin: 0 auto 23px;
 
-  background-image: url(images/index/icon-house.svg);
+  background-image: url("images/index/icon-house.svg");
   content: "";
 }
 
@@ -436,7 +436,7 @@ body {
   height: 70px;
   margin: 0 auto 23px;
 
-  background-image: url(images/index/icon-food.svg);
+  background-image: url("images/index/icon-food.svg");
   content: "";
 }
 
@@ -450,7 +450,7 @@ body {
   height: 76px;
   margin: 0 auto 23px;
 
-  background-image: url(images/index/icon-suv.svg);
+  background-image: url("images/index/icon-suv.svg");
   content: "";
 }
 
@@ -501,7 +501,7 @@ body {
   text-align: center;
 
   background-color: #000000;
-  background: url(images/index/subscribe-bg.jpg) 100%/cover no-repeat;
+  background: url("images/index/subscribe-bg.jpg") 100%/cover no-repeat;
 }
 
 .subscribe-inner {
@@ -583,7 +583,7 @@ body {
   color: #FFFFFF;
 
   background-color: #000000;
-  background: url(images/catalog/catalog-background.jpg) 100%/cover no-repeat #000000;
+  background: url("images/catalog/catalog-background.jpg") 100%/cover no-repeat #000000;
 }
 
 .catalog-title {
@@ -617,7 +617,7 @@ body {
   height: 12px;
   margin-right: 26px;
 
-  background-image: url(images/catalog/breadcrumps-home.svg);
+  background-image: url("images/catalog/breadcrumps-home.svg");
 }
 
 .bread-home::after {
@@ -628,7 +628,7 @@ body {
   height: 8px;
 
   content: "";
-  background-image: url(images/catalog/breadcrumps-gap.svg);
+  background-image: url("images/catalog/breadcrumps-gap.svg");
 }
 
 .search-form {
@@ -818,15 +818,15 @@ body {
 }
 
 .display-tile {
-  background-image: url(images/catalog/mode-tile.svg);
+  background-image: url("images/catalog/mode-tile.svg");
 }
 
 .display-slide {
-  background-image: url(images/catalog/mode-slideshow.svg);
+  background-image: url("images/catalog/mode-slideshow.svg");
 }
 
 .display-list {
-  background-image: url(images/catalog/mode-list.svg);
+  background-image: url("images/catalog/mode-list.svg");
 }
 
 .variants {
