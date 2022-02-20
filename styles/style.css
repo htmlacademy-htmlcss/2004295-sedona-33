@@ -307,8 +307,8 @@ body {
   padding: 51px 371px 78px;
 
   background-color: #000000;
-  background: url(../images/index/before-welcome.svg) bottom/100% no-repeat,
-  url(../images/index/index-background.jpg) 100%/cover no-repeat;
+  background: url(images/index/before-welcome.svg) bottom/100% no-repeat,
+  url(images/index/index-background.jpg) 100%/cover no-repeat;
 }
 
 .main-title-wrapper {
@@ -366,7 +366,7 @@ body {
 }
 
 .real-town {
-  background-image: url(images/index/real-town.jpg);
+  background-image: url("images/index/real-town.jpg");
   background-position-x: right;
 }
 
@@ -376,7 +376,7 @@ body {
 }
 
 .evil-bridge {
-  background-image: url(images/index/evil-bridge.jpg);
+  background-image: url("images/index/evil-bridge.jpg");
 }
 
 .evil-bridge-wrapper {
