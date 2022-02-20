@@ -366,7 +366,7 @@ body {
 }
 
 .real-town {
-  background-image: url("images/index/real-town.jpg");
+  background-image: url("../images/index/real-town.jpg");
   background-position-x: right;
 }
 
@@ -376,7 +376,7 @@ body {
 }
 
 .evil-bridge {
-  background-image: url("images/index/evil-bridge.jpg");
+  background-image: url("/images/index/evil-bridge.jpg");
 }
 
 .evil-bridge-wrapper {
