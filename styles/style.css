@@ -307,8 +307,8 @@ body {
   padding: 51px 371px 78px;
 
   background-color: #000000;
-  background: url(/images/index/before-welcome.svg) bottom/100% no-repeat,
-  url(/images/index/index-background.jpg) 100%/cover no-repeat;
+  background: url(images/index/before-welcome.svg) bottom/100% no-repeat,
+  url(images/index/index-background.jpg) 100%/cover no-repeat;
 }
 
 .main-title-wrapper {
