@@ -171,10 +171,17 @@ body {
 }
 
 .active-link {
-  text-decoration: underline;
-  text-underline-offset: 23px;
-  text-decoration-color: #756257;
-  cursor: pointer;
+  position: relative;
+}
+
+.active-link::after {
+  position: absolute;
+  right: 15px;
+  bottom: -1px;
+  left: 15px;
+  height: 2px;
+  background-color: #756257;
+  content: "";
 }
 
 .user-menu {
@@ -192,22 +199,24 @@ body {
 }
 
 .user-link {
-  background-repeat: no-repeat;
-  background-position: 50%;
+  display: flex;
 }
 
-.search-tool {
-  background-image: url("../images/general/search.svg");
-  width: 20px;
-  height: 19px;
+.header-ico {
+  fill: #000;
+}
+
+.header-ico:hover {
+  fill: #756257;
+}
+
+.header-ico:active {
+  fill: #756257;
+  opacity: 0.3;
 }
 
 .fav-tool {
   position: relative;
-
-  background-image: url("../images/general/favorite.svg");
-  width: 19px;
-  height: 17px;
 }
 
 .counter {
@@ -578,7 +587,7 @@ body {
 /** catalog.html **/
 
 .menu-select {
-  padding: 39px 72px 84px 71px;
+  padding: 40px 72px 84px 71px;
 
   color: #FFFFFF;
 
@@ -591,41 +600,37 @@ body {
 
   font-weight: 700;
   font-size: 60px;
-  line-height: 70px;
+  line-height: 68px;
 }
 
-.breadcrumps {
+.breadcrumbs {
   display: flex;
   align-items: center;
   margin: 0;
-  margin-bottom: 43px;
+  margin-bottom: 45px;
 }
 
-.breadcrumps-link {
-  text-decoration: none;
-  color: #FFFFFF;
-  font-size: 16px;
-  line-height: 21px;
-}
-
-.bread-home {
-  position: relative;
-
-  display: flex;
-  align-items: center;
+.breadcrumbs-link {
+  display: block;
   width: 12px;
   height: 12px;
-  margin-right: 26px;
 
   background-image: url("../images/catalog/breadcrumps-home.svg");
 }
 
-.bread-home::after {
-  position: absolute;
-  left: 23px;
+.breadcrumbs-item {
+  display: flex;
+  position: relative;
+  margin-right: 26px;
+}
 
+.breadcrumbs-item:after {
+  position: absolute;
+  display: flex;
   width: 5px;
   height: 8px;
+  top: 3px;
+  right: -17px;
 
   content: "";
   background-image: url("../images/catalog/breadcrumps-gap.svg");
@@ -815,6 +820,7 @@ body {
   border: 2px solid #E5E5E5;
   border-radius: 4px;
   box-sizing: border-box;
+  cursor: pointer;
 }
 
 .display-tile {
@@ -1008,7 +1014,6 @@ p.rating-wrapper {
 
 .hover-opacity:hover {
   opacity: 0.6;
-  transition: 1s;
 }
 
 .active-opacity-text:active {
