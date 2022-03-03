@@ -252,21 +252,33 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 35px 72px;
+  padding: 0px 72px;
 }
 
 .socials-list {
   display: flex;
-  flex-wrap: wrap;
 }
 
-.social-link-item {
+.social-item {
   display: flex;
-  align-items: center;
 }
 
-.social-link-item:not(:last-child) {
-  margin-right: 30px;
+.social-item:not(:last-child) {
+  margin-right: 4px;
+}
+
+.social-item a {
+  width: 40px;
+  height: 40px;
+
+  background-repeat: no-repeat;
+  background-position: 50%;
+  outline: none;
+}
+
+.socials-link:focus {
+  border: inset 0 0 0 3px #83B3D3;
+  border-radius: 10px;
 }
 
 .twitter-link {
