@@ -252,7 +252,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right:  72px;
+  padding-right: 27px;
   padding-left: 60px;
   min-height: 120px;
 }
@@ -274,6 +274,12 @@ body {
   background-repeat: no-repeat;
   background-position: 50%;
   outline: none;
+}
+
+.socials-item a:focus {
+  box-sizing: border-box;
+  border: 3px solid #83B3D3;
+  border-radius: 10px;
 }
 
 .twitter-link {
@@ -303,6 +309,17 @@ body {
 
 .footer-logo {
   display: flex;
+  align-items: center;
+  width: 160px;
+  height: 70px;
+}
+
+.footer-logo svg {
+  fill: #000;
+}
+
+.footer-logo svg:hover {
+  fill: #756257;
 }
 
 .phone:hover,
