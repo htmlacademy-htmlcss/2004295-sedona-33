@@ -744,7 +744,7 @@ body {
 }
 
 .price-input {
-  padding: 14px 19px 11px 16px;
+  padding: 14px 45px 11px 16px;
   max-width: 145px;
 
   font-family: "PT Sans", Arial, sans-serif;
@@ -759,6 +759,20 @@ body {
 .price-input-left {
   border-top-left-radius: 4px;
   border-bottom-left-radius: 4px;
+}
+
+.low-price-span,
+.high-price-span {
+  position: absolute;
+  opacity: 0.3;
+}
+
+.low-price-span {
+  transform: translate(113px, 13px);
+}
+
+.high-price-span {
+  transform: translate(252px, 13px);
 }
 
 .price-input-right {
