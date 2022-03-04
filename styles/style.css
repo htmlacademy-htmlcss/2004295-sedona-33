@@ -301,6 +301,12 @@ body {
 }
 
 .phone {
+  display: flex;
+  min-width: 361px;
+  min-height: 70px;
+  align-items: center;
+  justify-content: center;
+
   font-size: 40px;
   line-height: 40px;
   text-decoration: none;
@@ -332,6 +338,10 @@ body {
 .phone:active,
 .footer-logo:active {
   color: rgba(117, 98, 87, 0.3);
+}
+
+.phone:focus {
+  border-radius: 10px;
 }
 
 /** index.html **/
@@ -663,7 +673,6 @@ body {
 
 .search-form {
   display: flex;
-  align-items: center;
 }
 
 .checkbox {
@@ -723,7 +732,7 @@ body {
 
 .price-input {
   padding: 14px 19px 11px 16px;
-  max-width: 144px;
+  max-width: 145px;
 
   font-family: "PT Sans", Arial, sans-serif;
   color: #FFFFFF;
@@ -742,7 +751,7 @@ body {
 .price-input-right {
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
-  border-left: none;
+  transform: translateX(-2px);
 }
 
 .price-input:hover {
@@ -787,7 +796,7 @@ body {
 .form-reset {
   padding: 0;
 
-  font-family: "PT Sans", Arial, sans-serif;
+  font: inherit;
   color: #FFFFFF;
 
   background-color: inherit;
@@ -832,6 +841,18 @@ body {
   border-radius: 4px;
 }
 
+.show-first:active {
+  opacity: 0.3;
+}
+
+.show-first:hover,
+.display-btn:hover,
+.show-first:focus,
+.display-btn:focus {
+  outline: none;
+  border-color: #83B3D3;
+}
+
 .display-mode {
   display: flex;
   margin: 0;
@@ -863,6 +884,10 @@ body {
   cursor: pointer;
 }
 
+.display-btn:active {
+  border-color: #000000;
+}
+
 .display-tile {
   background-image: url("../images/catalog/mode-tile.svg");
 }
@@ -879,9 +904,9 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 340px);
   column-gap: 18px;
-  row-gap: 6px;
+  row-gap: 8px;
   margin: 0;
-  margin-bottom: 29px;
+  margin-bottom: 31px;
 }
 
 .variants-item {
@@ -916,7 +941,7 @@ body {
 }
 
 .variants-btn {
-  padding: 7px 0 10px;
+  padding: 8px 0 8px;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 16px;
@@ -969,7 +994,7 @@ p.rating-wrapper {
 }
 
 .load-more-wrapper {
-  padding: 29px 218px;
+  padding: 30px 218px;
   margin-bottom: 30px;
 
   border-top: 1px solid #E5E5E5;
