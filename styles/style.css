@@ -745,6 +745,21 @@ body {
   border-left: none;
 }
 
+.price-input:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.price-input:active {
+  border-color: #FFFFFF;
+  background-color: #756257;
+}
+
+.price-input:focus {
+  outline: none;
+  border-color: #FFFFFF;
+  box-shadow: inset 0 0 0 3px #81B3D2, 0 0 0 3px #81B3D2;
+}
+
 .form-btn-wrapper {
   display: flex;
   flex-direction: column;
@@ -1051,4 +1066,10 @@ p.rating-wrapper {
 
 .focus-border-blue:focus {
   outline: 3px solid #83B3D3;
+}
+
+.in-focus:focus {
+  box-sizing: border-box;
+  outline: none;
+  box-shadow: inset 0 0 0 2px #83B3D3;
 }
