@@ -263,6 +263,7 @@ body {
   list-style: none;
   max-width: 160px;
   margin: 0;
+  margin-right: 20px;
 }
 
 .socials-item:not(:last-child) {
