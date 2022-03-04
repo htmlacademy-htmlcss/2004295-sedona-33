@@ -252,14 +252,17 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: 27px;
+  padding-right: 50px;
   padding-left: 60px;
   min-height: 120px;
 }
 
 .socials-list {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
+  max-width: 160px;
+  margin: 0;
 }
 
 .socials-item:not(:last-child) {
@@ -313,9 +316,23 @@ body {
   color: #000000;
 }
 
+.phone:hover,
+.phone:focus {
+  color: #756257;
+}
+
+.phone:active {
+  color: rgba(117, 98, 87, 0.3);
+}
+
+.phone:focus {
+  border-radius: 10px;
+}
+
 .footer-logo {
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 160px;
   height: 70px;
 }
@@ -328,20 +345,16 @@ body {
   fill: #756257;
 }
 
-.phone:hover,
-.phone:focus,
-.footer-logo:hover,
-.footer-logo:focus {
-  color: #756257;
-}
-
-.phone:active,
 .footer-logo:active {
-  color: rgba(117, 98, 87, 0.3);
+  opacity: 0.3;
 }
 
-.phone:focus {
+.footer-logo:focus {
   border-radius: 10px;
+}
+
+.footer-logo:focus svg {
+  fill: #756257;
 }
 
 /** index.html **/
@@ -925,6 +938,15 @@ body {
 
 .variants-link {
   text-decoration: none;
+}
+
+.variants-link:hover .hotel-img {
+  opacity: 0.6;
+  transition: 0.3s;
+}
+
+.variants-link:focus {
+  outline: none;
 }
 
 .variants-title {
