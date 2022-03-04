@@ -202,17 +202,21 @@ body {
   display: flex;
 }
 
-.header-ico {
+.header-svg {
   fill: #000;
 }
 
-.header-ico:hover {
+.header-svg:hover {
   fill: #756257;
 }
 
-.header-ico:active {
+.header-svg:active {
   fill: #756257;
   opacity: 0.3;
+}
+
+.fav-svg:active + .counter {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .fav-tool {
