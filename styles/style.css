@@ -604,10 +604,20 @@ body {
   border-bottom-left-radius: 10px;
 }
 
+.subscribe-input:disabled {
+  background-color: #F2F2F2;
+  border: none;
+}
+
+.subscribe-input:invalid {
+  background-color: #FFFFFF;
+  border: 2px solid #FF5757;
+}
+
 .subscribe-btn {
   padding: 0;
 
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: inherit;
   font-size: 20px;
   line-height: 26px;
 
@@ -616,7 +626,7 @@ body {
 }
 
 .input {
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: inherit;
 
   background-color: #F2F2F2;
   border: none;
@@ -831,7 +841,7 @@ body {
   padding: 0;
   margin-bottom: 20px;
 
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: inherit;
   font-size: 16px;
   line-height: 21px;
 
@@ -845,8 +855,7 @@ body {
 .form-reset {
   padding: 0;
 
-  letter-spacing: 1px;
-  font: inherit;
+  font-family: inherit;
   color: #FFFFFF;
 
   background-color: inherit;
@@ -885,7 +894,7 @@ body {
   min-width: 287px;
   max-height: 48px;
 
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: inherit;
 
   border: 2px solid #E5E5E5;
   border-radius: 4px;
@@ -1011,7 +1020,7 @@ body {
 .variants-btn {
   padding: 8px 0 8px;
 
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: inherit;
   font-size: 16px;
   line-height: 21px;
 }
