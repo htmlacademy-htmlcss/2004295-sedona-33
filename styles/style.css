@@ -767,7 +767,6 @@ body {
 .checkbox-price {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 48px;
   align-self: flex-start;
 }
 
@@ -777,9 +776,11 @@ body {
 
 .price-input {
   padding: 14px 45px 11px 16px;
-  max-width: 145px;
+  max-width: 144px;
+  max-height: 48px;
+  margin-bottom: 28px;
 
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: inherit;
   color: #FFFFFF;
 
   background-color: inherit;
@@ -828,6 +829,53 @@ body {
   box-shadow: inset 0 0 0 3px #81B3D2, 0 0 0 3px #81B3D2;
 }
 
+.range-scale {
+  position: relative;
+  height: 4px;
+  grid-column: 1 / 3;
+
+  background-color: rgba(255, 255, 255, 0.3)
+}
+
+.range-bar {
+  position: absolute;
+  height: 4px;
+  width: 227px;
+
+
+  background-color: #FFFFFF;
+}
+
+.range-toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: -8px;
+
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle-max {
+  right: -9px;
+}
+
+.range-toggle:hover,
+.range-toggle:focus {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.range-toggle:focus {
+  outline: 3px solid #83B3D3;
+}
+
+.range-toggle:active {
+  box-shadow: 0px 7px 15px 0px rgba(0, 0, 0, 0.4);
+  outline: 2px solid #83B3D3;
+}
+
 .form-btn-wrapper {
   display: flex;
   flex-direction: column;
@@ -839,7 +887,7 @@ body {
   width: 160px;
   height: 47px;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 
   font-family: inherit;
   font-size: 16px;
@@ -853,7 +901,10 @@ body {
 }
 
 .form-reset {
+  align-self: center;
   padding: 0;
+  min-width: 94px;
+  min-height: 26px;
 
   font-family: inherit;
   color: #FFFFFF;
@@ -861,6 +912,12 @@ body {
   background-color: inherit;
   border: none;
   cursor: pointer;
+  outline: none;
+}
+
+.form-reset:focus {
+  outline: 3px solid #83B3D3;
+  border-radius: 4px;
 }
 
 .variants-container {
