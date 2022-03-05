@@ -1152,9 +1152,7 @@ body {
 }
 
 .rating-level {
-  display: inline-block;
-  min-width: 160px;
-  margin-left: auto;
+  width: 160px;
 
   text-transform: uppercase;
   text-align: center;
@@ -1165,6 +1163,26 @@ body {
 
 p.rating-wrapper {
   margin: 0;
+}
+
+.stars {
+  display: block;
+  align-self: center;
+  height: 17px;
+  background: url(../images/catalog/star.svg);
+  background-size: 25px 18px;
+}
+
+.stars-two {
+  width: 43px;
+}
+
+.stars-three {
+  width: 68px;
+}
+
+.stars-four {
+  width: 92px;
 }
 
 .load-more-btn {
