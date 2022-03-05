@@ -991,7 +991,7 @@ body {
 }
 
 .show-first {
-  padding: 10px 13px;
+  padding: 10px 18px;
   min-width: 287px;
   max-height: 48px;
 
@@ -999,6 +999,11 @@ body {
 
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  appearance: none;
+
+  background-image: url(../images/catalog/select-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right 18px center;
 }
 
 .show-first:active {
@@ -1255,10 +1260,26 @@ p.rating-wrapper {
 
 .on-display-select {
   min-width: 160px;
-  padding: 12px;
+  padding: 12px 15px;
 
   border: 2px solid #E5E5E5;
   border-radius: 4px;
+  appearance: none;
+  outline: none;
+
+  background-image: url(../images/catalog/select-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right 18px center;
+}
+
+.on-display-select:active {
+  opacity: 0.3;
+}
+
+.on-display-select:hover,
+.on-display-select:focus {
+  outline: none;
+  border-color: #83B3D3;
 }
 
 /** Общие псевдоклассы состояний */
