@@ -759,9 +759,52 @@ body {
   line-height: 26px;
 }
 
-.checkbox-input {
-  margin: 0;
-  margin-right: 23px;
+.checkbox-label {
+  display: block;
+  position: relative;
+}
+
+.checkbox-label:hover .checkbox-mark {
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+.checkbox-mark {
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+}
+
+.checkbox-input:checked + .checkbox-mark {
+  background-image: url(../images/catalog/checkbox-tick.svg);
+  background-repeat: no-repeat;
+  background-position: 5px 50%;
+}
+
+.checkbox-input:active + .checkbox-mark {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.checkbox-name {
+  padding-left: 40px;
+}
+
+.radio-mark {
+  position: absolute;
+  top: 1px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background-color: #FFFFFF;
+  border-radius: 50%;
+}
+
+.checkbox-input:checked + .radio-mark {
+  background-color: #3F5E72;
+  box-shadow: inset 0 0 0 5px #FFFFFF;
 }
 
 .checkbox-price {
