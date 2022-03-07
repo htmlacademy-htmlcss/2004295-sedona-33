@@ -1354,7 +1354,8 @@ p.rating-wrapper {
   width: 53px;
   height: 53px;
   right: 70px;
-  top: 54px;
+  margin-top: -7px;
+  padding: 0;
 
   background-color: #F2F2F2;
   border: none;
@@ -1367,10 +1368,26 @@ p.rating-wrapper {
   vertical-align: middle;
 }
 
+.modal-close-btn:hover,
+.modal-close-btn:active,
+.modal-close-btn:focus {
+  background-color: #E6E6E6;
+}
+
+.modal-close-btn:active svg {
+  opacity: 0.3;
+}
+
+.modal-close-btn:focus {
+  outline: 3px solid #83B3D3;
+}
+
 .modal-title {
+  display: block;
   margin: 0;
-  margin-bottom: 62px;
+  margin-bottom: 60px;
   padding: 0;
+  max-width: 500px;
 
   transform: translateX(-2px);
   font-size: 30px;
@@ -1383,7 +1400,7 @@ p.rating-wrapper {
   display: grid;
   grid-template-columns: 155px 133px 154px 133px;
   row-gap: 40px;
-  margin-bottom: 37px;
+  margin-bottom: 40px;
   align-items: baseline;
 }
 
@@ -1397,6 +1414,10 @@ p.rating-wrapper {
   height: 50px;
 
   font-family: inherit;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #000;
 
   border: none;
   border-radius: 4px;
@@ -1404,23 +1425,30 @@ p.rating-wrapper {
 }
 
 .modal-input::placeholder {
-  color: #000;
-  font-size: 18px;
-  line-height: 40px;
-  font-weight: 700;
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .modal-date-input {
   padding: 0 19px;
+  position: relative;
 
   grid-column: 2 / 5;
+}
+
+.modal-date-input::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  background-image: url(../images/general/modal-date.svg);
+  width: 15px;
+  height: 15px;
 }
 
 .modal-field-label-check-in::after {
   position: absolute;
   content: "Мы не можем отправить вас в прошлое.";
-  left: 225px;
-  top: 205px;
+  margin-left: 55px;
+  margin-top: 37px;
 
   font-size: 16px;
   line-height: 40px;
@@ -1431,8 +1459,8 @@ p.rating-wrapper {
 .modal-field-label-check-out::after {
   position: absolute;
   content: "На эти даты есть свободные номера. Пока есть.";
-  left: 225px;
-  top: 295px;
+  margin-left: 50px;
+  margin-top: 37px;
 
   font-size: 16px;
   line-height: 40px;
@@ -1443,6 +1471,67 @@ p.rating-wrapper {
 .modal-input-guests,
 .modal-field-label-children {
   text-align: center;
+}
+
+.modal-children-label-container {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-field-label-children {
+  position: relative;
+}
+
+.modal-tooltip {
+  position: absolute;
+  margin-top: 8px;
+  margin-left: 90px;
+}
+
+.modal-tooltip:hover .tooltip-icon {
+  fill: #68A2CA;
+}
+
+.tooltip-icon {
+  fill: #83B3D3;
+  width: 100%;
+  height: 100%;
+}
+
+.modal-tooltip-btn {
+  padding: 0;
+
+  border: none;
+  border-radius: 50%;
+  background-color: transparent;
+}
+
+.modal-tooltip-text {
+  position: absolute;
+  display: block;
+  width: 256px;
+  padding: 19px 18px 24px 22px;
+  margin-top: 12px;
+  left: -115px;
+
+  font-size: 16px;
+  line-height: 20px;
+  color: #FFFFFF;
+
+  border-radius: 10px;
+  background-color: #333333;
+  box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+}
+
+.modal-tooltip-text::before {
+  content: "";
+  position: absolute;
+  width: 19px;
+  height: 9px;
+  background-image: url(../images/general/modal-tooltip-background.svg);
+  margin-top: -28px;
+  left: 118px;
 }
 
 .modal-form-btn {
