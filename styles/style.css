@@ -1416,10 +1416,31 @@ p.rating-wrapper {
   grid-column: 2 / 5;
 }
 
-.modal-input-guests {
-  text-align: center;
+.modal-field-label-check-in::after {
+  position: absolute;
+  content: "Мы не можем отправить вас в прошлое.";
+  left: 225px;
+  top: 205px;
+
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #FF5757;
 }
 
+.modal-field-label-check-out::after {
+  position: absolute;
+  content: "На эти даты есть свободные номера. Пока есть.";
+  left: 225px;
+  top: 295px;
+
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 400;
+  color: #333333;
+}
+
+.modal-input-guests,
 .modal-field-label-children {
   text-align: center;
 }
