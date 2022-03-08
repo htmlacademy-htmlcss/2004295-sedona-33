@@ -1385,7 +1385,7 @@ p.rating-wrapper {
 .modal-title {
   display: block;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 61px;
   padding: 0;
   max-width: 500px;
 
@@ -1396,12 +1396,26 @@ p.rating-wrapper {
   text-transform: uppercase;
 }
 
-.modal-grid-container {
+.modal-flex-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 38px;
+}
+
+.modal-flex-container p {
+  margin: 0;
+}
+
+.modal-date-container {
   display: grid;
-  grid-template-columns: 155px 133px 154px 133px;
-  row-gap: 40px;
-  margin-bottom: 40px;
-  align-items: baseline;
+  grid-template-columns: 155px 420px;
+  align-items: center;
+}
+
+.modal-guests-container {
+  display: grid;
+  grid-template-columns: 155px 133px 1fr 133px;
+  align-items: center;
 }
 
 .modal-field-label {
@@ -1444,27 +1458,18 @@ p.rating-wrapper {
   height: 15px;
 }
 
-.modal-field-label-check-in::after {
-  position: absolute;
-  content: "Мы не можем отправить вас в прошлое.";
-  margin-left: 55px;
-  margin-top: 37px;
+.modal-input-correct,
+.modal-input-wrong {
+  display: block;
+  grid-column: 2 / 3;
+  transform: translateY(-7px);
 
   font-size: 16px;
   line-height: 40px;
-  font-weight: 400;
   color: #FF5757;
 }
 
-.modal-field-label-check-out::after {
-  position: absolute;
-  content: "На эти даты есть свободные номера. Пока есть.";
-  margin-left: 50px;
-  margin-top: 37px;
-
-  font-size: 16px;
-  line-height: 40px;
-  font-weight: 400;
+.modal-input-correct {
   color: #333333;
 }
 
@@ -1484,7 +1489,7 @@ p.rating-wrapper {
 
 .modal-tooltip {
   position: absolute;
-  margin-top: 8px;
+  margin-top: 7px;
   margin-left: 90px;
 }
 

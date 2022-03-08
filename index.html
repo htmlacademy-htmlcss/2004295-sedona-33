@@ -164,25 +164,34 @@
         <section class="modal-content">
           <form action="https://echo.htmlacademy.ru" method="get">
             <legend class="modal-title">Поиск гостиницы в Седоне</legend>
-            <div class="modal-grid-container">
-              <label class="modal-field-label modal-field-label-check-in" for="check-in">Дата заезда:</label>
-              <input class="modal-input modal-date-input" type="text" name="check-in" id="check-in" placeholder="Укажите дату" value="27 апреля 2020">
-              <label class="modal-field-label modal-field-label-check-out" for="check-out">Дата выезда:</label>
-              <input class="modal-input modal-date-input" type="text" name="check-out" id="check-out" placeholder="Укажите дату" value="1 сентября 2021">
-              <label class="modal-field-label" for="adults">Взрослые:</label>
-              <input class="modal-input modal-input-guests" type="text" name="adults" id="adults" placeholder="0" value="2">
-              <span class="modal-children-label-container">
-                <label class="modal-field-label modal-field-label-children" for="children">Дети:</label>
-                <span class="modal-tooltip">
-                  <button class="modal-tooltip-btn" type="button">
-                    <svg class="tooltip-icon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12.5" cy="12.5" r="12.5"/><g clip-path="url(#a)" fill="#fff">
+            <div class="modal-flex-container">
+              <p class="modal-date-container">
+                <label class="modal-field-label modal-field-label-check-in" for="check-in">Дата заезда:</label>
+                <input class="modal-input modal-date-input" type="text" name="check-in" id="check-in"   placeholder="Укажите дату" value="27 апреля 2020">
+                <span class="modal-input-wrong">Мы не можем отправить вас в прошлое.</span>
+              </p>
+              <p class="modal-date-container">
+                <label class="modal-field-label modal-field-label-check-out" for="check-out">Дата выезда:</label>
+                <input class="modal-input modal-date-input" type="text" name="check-out"
+                id="check-out" placeholder="Укажите дату" value="1 сентября 2021">
+                <span class="modal-input-correct">На эти даты есть свободные номера. Пока есть.</span>
+              </p>
+              <p class="modal-guests-container">
+                <label class="modal-field-label" for="adults">Взрослые:</label>
+                <input class="modal-input modal-input-guests" type="text" name="adults" id="adults" placeholder="0"   value="2">
+                <span class="modal-children-label-container">
+                  <label class="modal-field-label modal-field-label-children" for="children">Дети:</label>
+                  <span class="modal-tooltip">
+                    <button class="modal-tooltip-btn" type="button">
+                      <svg class="tooltip-icon" width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http:// www.w3.org/2000/svg"><circle cx="12.5" cy="12.5" r="12.5"/><g clip-path="url(#a)" fill="#fff">
                       <path d="M12 17h1v-6h-1v6ZM13 8h-1v1h1V8Z"/></g><defs><clipPath id="a"><path fill="#fff" transform="translate(12 8)" d="M0 0h1v9H0z"/></clipPath></defs>
-                    </svg>
-                  </button>
-                  <span class="modal-tooltip-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                      </svg>
+                    </button>
+                    <span class="modal-tooltip-text">Укажите количество детей, которые будут с вами, возраст которых  от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                  </span>
                 </span>
-              </span>
-              <input class="modal-input modal-input-guests" type="text" name="children" id="children" placeholder="0" value="1">
+                <input class="modal-input modal-input-guests" type="text" name="children" id="children"   placeholder="0" value="1">
+              </p>
             </div>
             <button class="modal-form-btn blue-btn active-opacity-text" type="submit">Найти</button>
           </form>
