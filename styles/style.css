@@ -1399,23 +1399,22 @@ p.rating-wrapper {
 .modal-flex-container {
   display: flex;
   flex-direction: column;
-  margin-bottom: 38px;
+  margin-bottom: 40px;
 }
 
 .modal-flex-container p {
   margin: 0;
+  align-items: center;
 }
 
 .modal-date-container {
   display: grid;
   grid-template-columns: 155px 420px;
-  align-items: center;
 }
 
 .modal-guests-container {
   display: grid;
   grid-template-columns: 155px 133px 1fr 133px;
-  align-items: center;
 }
 
 .modal-field-label {
@@ -1443,19 +1442,9 @@ p.rating-wrapper {
 }
 
 .modal-date-input {
-  padding: 0 19px;
-  position: relative;
+  padding: 0 50px 0 19px;
 
   grid-column: 2 / 5;
-}
-
-.modal-date-input::after {
-  content: "";
-  position: absolute;
-  display: flex;
-  background-image: url(../images/general/modal-date.svg);
-  width: 15px;
-  height: 15px;
 }
 
 .modal-input-correct,
@@ -1466,6 +1455,9 @@ p.rating-wrapper {
 
   font-size: 16px;
   line-height: 40px;
+}
+
+.modal-input-wrong {
   color: #FF5757;
 }
 
@@ -1473,9 +1465,33 @@ p.rating-wrapper {
   color: #333333;
 }
 
+.modal-input-date-btn {
+  position: absolute;
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 38px;
+  right: 89px;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.modal-input-date-svg {
+  fill: #000;
+  opacity: 0.3;
+}
+
 .modal-input-guests,
 .modal-field-label-children {
   text-align: center;
+}
+
+.modal-input-guests {
+  width: 100%;
+  padding: 0;
 }
 
 .modal-children-label-container {
@@ -1489,7 +1505,7 @@ p.rating-wrapper {
 
 .modal-tooltip {
   position: absolute;
-  margin-top: 7px;
+  margin-top: 9px;
   margin-left: 90px;
 }
 
@@ -1516,7 +1532,7 @@ p.rating-wrapper {
   display: block;
   width: 256px;
   padding: 19px 18px 24px 22px;
-  margin-top: 12px;
+  margin-top: 11px;
   left: -115px;
 
   font-size: 16px;
