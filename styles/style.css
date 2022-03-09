@@ -591,7 +591,7 @@ body {
 .subscribe-form {
   display: grid;
   grid-template-columns: 600px 200px;
-  grid-template-rows: 60px;
+  min-height: 60px;
   justify-content: center;
 }
 
@@ -605,18 +605,13 @@ body {
   border-bottom-left-radius: 10px;
 }
 
-.subscribe-input:disabled {
-  background-color: #F2F2F2;
-  border: none;
-}
-
 .subscribe-input:invalid {
   background-color: #FFFFFF;
   border: 2px solid #FF5757;
 }
 
 .subscribe-btn {
-  padding: 0;
+  padding: 10px;
 
   font-family: inherit;
   font-size: 20px;
@@ -970,7 +965,7 @@ body {
 }
 
 .variants-container {
-  padding: 44px 72px 73px;
+  padding: 44px 72px 66px;
 }
 
 .results {
@@ -1134,11 +1129,12 @@ body {
 }
 
 .variants-btn {
-  padding: 8px 0 8px;
+  padding: 8px;
 
   font-family: inherit;
   font-size: 16px;
   line-height: 21px;
+  box-sizing: border-box;
 }
 
 .learn-more-btn {
@@ -1195,7 +1191,7 @@ body {
   display: block;
   text-decoration: none;
   max-width: 620px;
-  padding: 17px 0;
+  padding: 17px;
   margin-left: auto;
   margin-right: auto;
 
@@ -1232,35 +1228,37 @@ body {
   outline: 3px solid #756257;
 }
 
-.pagination-block {
+.pagination-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
 }
 
-.pagination {
+.pagination-list {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
+  max-width: 370px;
 
   font-weight: 700;
 }
 
-.pagination-item:not(:last-child) {
+.pagination-item:not(:nth-child(6n)) {
   margin-right: 8px;
 }
 
 .pagination-link {
   display: flex;
-  align-items: center;
   justify-content: center;
-  width: 55px;
-  height: 55px;
+  min-width: 55px;
+  padding: 14px;
+  margin-bottom: 8px;
 
   text-decoration: none;
   font-size: 20px;
   line-height: 26px;
 
   border-radius: 4px;
+  box-sizing: border-box;
 }
 
 .active-page {
@@ -1273,6 +1271,8 @@ body {
 .on-display-wrapper {
   display: flex;
   align-items: center;
+  max-width: 386px;
+  margin-bottom: 8px;
 }
 
 .on-display-title {
@@ -1284,7 +1284,8 @@ body {
 
 .on-display-select {
   min-width: 160px;
-  padding: 12px 15px;
+  max-width: 160px;
+  padding: 12px 50px 12px 15px;
 
   border: 2px solid #E5E5E5;
   border-radius: 4px;
