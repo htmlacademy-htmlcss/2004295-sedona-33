@@ -1337,6 +1337,10 @@ p.rating-wrapper {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
+.close-modal-page {
+  display: none;
+}
+
 .modal-container {
   position: relative;
   width: 715px;
