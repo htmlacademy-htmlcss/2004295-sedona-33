@@ -1016,9 +1016,9 @@ body {
 }
 
 .show-first:hover,
-.display-btn:hover,
+.display-btn:hover:not(.display-btn-current),
 .show-first:focus,
-.display-btn:focus {
+.display-btn:focus:not(.display-btn-current) {
   outline: none;
   border-color: #83B3D3;
 }
@@ -1052,13 +1052,16 @@ body {
   cursor: pointer;
 }
 
-.display-btn:active {
-  border-color: #000000;
+.display-btn:active:not(.display-btn-current) {
+  opacity: 0.6;
+}
+
+.display-btn-current {
+  border: 2px solid #000000;
 }
 
 .display-tile {
   background-image: url("../images/catalog/mode-tile.svg");
-  border: 2px solid #000000;
 }
 
 .display-slide {
