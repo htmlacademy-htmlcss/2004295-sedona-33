@@ -1491,7 +1491,8 @@ p.rating-wrapper {
 
 .modal-input-guests {
   width: 100%;
-  padding: 0;
+  padding: 0 51px;
+  box-sizing: border-box;
 }
 
 .modal-children-label-container {
@@ -1501,6 +1502,29 @@ p.rating-wrapper {
 
 .modal-field-label-children {
   position: relative;
+}
+
+.modal-input-less,
+.modal-input-more {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.modal-input-less {
+  margin-top: 12px;
+  margin-left: 13px;
+}
+
+.modal-input-more {
+  margin-top: -38px;
+  margin-left: 94px;
 }
 
 .modal-tooltip {
