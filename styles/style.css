@@ -334,7 +334,7 @@ body {
   align-items: center;
   justify-content: center;
   width: 160px;
-  height: 70px;
+  min-height: 70px;
 }
 
 .footer-logo svg {
@@ -670,8 +670,9 @@ body {
 }
 
 .breadcrumbs-link {
-  display: block;
-  width: 12px;
+  display: flex;
+  align-items: center;
+  min-width: 12px;
   height: 12px;
   padding: 6px 8px 9px;
   transform: translateX(-6px);
@@ -884,7 +885,7 @@ body {
 
 .range-bar {
   position: absolute;
-  height: 4px;
+  height: inherit;
   width: 227px;
 
 
@@ -929,16 +930,19 @@ body {
 }
 
 .form-apply {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   width: 160px;
-  height: 47px;
-  padding: 0;
-  margin-bottom: 17px;
+  padding: 13px;
+  margin-bottom: 16px;
 
   font-family: inherit;
   font-size: 16px;
   line-height: 21px;
 
   border-radius: 4px;
+  overflow: hidden;
 }
 
 .form-apply:focus {
@@ -947,9 +951,9 @@ body {
 
 .form-reset {
   align-self: center;
-  padding: 0;
+  padding: 2px;
   min-width: 94px;
-  min-height: 26px;
+  max-width: 160px;
 
   font-family: inherit;
   color: #FFFFFF;
@@ -992,9 +996,9 @@ body {
 }
 
 .show-first {
-  padding: 10px 18px;
+  padding: 10px 40px 11px 18px;
   min-width: 287px;
-  max-height: 48px;
+  max-width: 500px;
 
   font-family: inherit;
 
@@ -1020,7 +1024,9 @@ body {
 }
 
 .display-mode {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 48px);
+  gap: 8px;
   margin: 0;
   margin-left: 81px;
 }
@@ -1028,10 +1034,6 @@ body {
 .display-item {
   display: flex;
   align-items: center;
-}
-
-.display-item:not(:first-child) {
-  margin-left: 8px;
 }
 
 .display-btn {
