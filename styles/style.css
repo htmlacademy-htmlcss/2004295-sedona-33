@@ -21,6 +21,7 @@ html {
 body {
   margin: 0;
   height: 100%;
+  min-width: 1280px;
 
   font-family: "PT Sans", Arial, sans-serif;
   font-weight: 400;
@@ -408,7 +409,6 @@ body {
 }
 
 .advantage {
-  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -416,6 +416,7 @@ body {
 
   font-size: 18px;
   line-height: 21px;
+  box-sizing: border-box;
 }
 
 .advantage-blue {
@@ -440,7 +441,7 @@ body {
 
 .real-town-wrapper {
   align-self: flex-start;
-  margin: 97px auto auto 90px;
+  margin: 97px auto 87px 90px;
 }
 
 .evil-bridge {
@@ -449,7 +450,7 @@ body {
 
 .evil-bridge-wrapper {
   align-self: flex-end;
-  margin: 98px 90px auto auto;
+  margin: 98px 90px 86px auto;
 }
 
 .advantage-title {
@@ -554,12 +555,13 @@ body {
 
 .search-btn {
   min-width: 575px;
-  padding: 15px 0 9px;
+  padding: 15px 20px 9px;
 
   font-size: 20px;
   line-height: 36px;
 
   border-radius: 10px;
+  box-sizing: border-box;
 }
 
 .subscribe-index {
@@ -797,6 +799,7 @@ body {
 }
 
 .checkbox-name {
+  display: block;
   padding-left: 40px;
 }
 
