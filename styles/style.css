@@ -194,8 +194,13 @@ body {
 
 .user-menu div {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  padding: 0 12px;
+  padding: 12px;
+}
+
+.favorites {
+  margin-right: 20px;
 }
 
 .user-link {
@@ -244,8 +249,10 @@ body {
 
 .menu-btn {
   min-width: 130px;
+  max-width: 130px;
   padding: 9px 15px 8px;
-  margin-left: 20px;
+  margin: 10px 0;
+  grid-column: 4 / 5;
 
   line-height: 20px;
 }
@@ -256,9 +263,9 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-right: 50px;
-  padding-left: 60px;
+  padding: 20px 50px 20px 60px;
   min-height: 120px;
+  box-sizing: border-box;
 }
 
 .socials-list {
@@ -274,12 +281,12 @@ body {
   margin-right: 4px;
 }
 
-.socials-item a {
+.socials-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  min-width: 40px;
+  min-height: 40px;
 
   outline: none;
 }
@@ -297,7 +304,7 @@ body {
   fill: #68A2CA;
 }
 
-.socials-item a:focus {
+.socials-link:focus {
   box-sizing: border-box;
   border: 3px solid #83B3D3;
   border-radius: 10px;
@@ -305,7 +312,9 @@ body {
 
 .phone {
   display: flex;
+  flex-wrap: wrap;
   min-width: 361px;
+  max-width: 400px;
   min-height: 70px;
   align-items: center;
   justify-content: center;
@@ -333,7 +342,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 160px;
+  min-width: 160px;
+  max-width: 200px;
   min-height: 70px;
 }
 
@@ -807,7 +817,7 @@ body {
 
 .checkbox-price {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 144px);
   align-self: flex-start;
 }
 
@@ -817,7 +827,6 @@ body {
 
 .price-input {
   padding: 14px 45px 11px 16px;
-  max-width: 144px;
   max-height: 48px;
   margin-bottom: 28px;
 
@@ -837,8 +846,12 @@ body {
 
 .low-price-span,
 .high-price-span {
+  display: block;
+  max-width: 20px;
+  max-height: 20px;
   position: absolute;
   opacity: 0.3;
+  overflow: hidden;
 }
 
 .low-price-span {
