@@ -726,7 +726,9 @@ body {
 }
 
 .search-form {
-  display: flex;
+  display: grid;
+  grid-template-columns: 149px 246px 301px 160px;
+  gap: 67px;
 }
 
 .checkbox {
@@ -734,14 +736,6 @@ body {
   margin: 0;
 
   border: none;
-}
-
-.checkbox:first-child {
-  margin-right: 67px;
-}
-
-.checkbox:nth-child(2) {
-  margin-right: 169px;
 }
 
 .checkbox ul {
