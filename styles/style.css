@@ -726,9 +726,7 @@ body {
 }
 
 .search-form {
-  display: grid;
-  grid-template-columns: 149px 246px 301px 160px;
-  gap: 67px;
+  display: flex;
 }
 
 .checkbox {
@@ -736,6 +734,14 @@ body {
   margin: 0;
 
   border: none;
+}
+
+.search-form .checkbox:first-child {
+  margin-right: 67px;
+}
+
+.search-form .checkbox:nth-child(2) {
+  margin-right: 169px;
 }
 
 .checkbox ul {
@@ -1354,9 +1360,9 @@ body {
   background-color: rgba(242, 242, 242, 0.8);
 }
 
-/* .close-modal-page {
+.close-modal-page {
   display: none;
-} */
+}
 
 .modal-container {
   position: relative;
