@@ -781,7 +781,8 @@ img {
   cursor: pointer;
 }
 
-.checkbox-label:hover .checkbox-mark {
+.checkbox-label:hover .checkbox-mark,
+.checkbox-input:focus + .checkbox-mark {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
@@ -823,6 +824,17 @@ img {
 .checkbox-input:checked + .radio-mark {
   background-color: #3F5E72;
   box-shadow: inset 0 0 0 5px #FFFFFF;
+}
+
+.checkbox-input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.checkbox-input:focus + .checkbox-mark,
+.checkbox-input:focus + .radio-mark {
+  outline: 3px solid #83B3D3;
 }
 
 .checkbox-price {
