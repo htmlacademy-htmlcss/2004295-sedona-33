@@ -66,6 +66,7 @@
                 <p class="num">— №1 —</p>
                 <p class="advantage-description">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
+              <img src="images/index/real-town.jpg" alt="Городок Седона." width="800" height="384">
             </li>
             <li class="advantage with-icon house">
               <h3 class="advantage-title icon-house">Жильё</h3>
@@ -80,6 +81,7 @@
               <p class="advantage-description">Не только китайского, <br>но и настоящего местного производства!</p>
             </li>
             <li class="advantage advantage-blue evil-bridge">
+              <img src="images/index/evil-bridge.jpg" alt="Мост дьявола." width="800" height="384">
               <div class="evil-bridge-wrapper blue-adv-wrapper">
                 <h3 class="advantage-title">Там есть <br>мост дьявола</h3>
                 <p class="num">— №2 —</p>
@@ -112,7 +114,8 @@
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-subtitle">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
-            <input class="subscribe-input input focus-border-blue" type="email" name="e-mail" placeholder="Ваш e-mail" aria-label="Форма подписки на рассылку">
+            <label class="visually-hidden" for="subscribe-input">Форма подписки на рассылку</label>
+            <input class="subscribe-input input focus-border-blue" type="email" name="e-mail" placeholder="Ваш e-mail" id="subscribe-input">
             <button class="subscribe-btn blue-btn active-opacity-text" type="submit">Подписаться</button>
           </form>
         </section>
@@ -167,7 +170,7 @@
             <div class="modal-flex-container">
               <p class="modal-date-container">
                 <label class="modal-field-label modal-field-label-check-in" for="check-in">Дата заезда:</label>
-                <input class="modal-input modal-date-input" type="text" name="check-in" id="check-in" placeholder="Укажите дату" value="27 апреля 2020">
+                <input class="modal-input modal-date-input focus-border-blue" type="text" name="check-in" id="check-in" placeholder="Укажите дату" value="27 апреля 2020" required>
                 <button class="modal-input-date-btn" type="button">
                   <svg class="modal-input-date-svg" role="img" aria-label="Выбор даты." width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><g>
                   <path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z"/><path d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z"/><path d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5ZM9.5 10c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5ZM5.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM7.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM9.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM11.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM11.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></g>
@@ -177,8 +180,8 @@
               </p>
               <p class="modal-date-container">
                 <label class="modal-field-label modal-field-label-check-out" for="check-out">Дата выезда:</label>
-                <input class="modal-input modal-date-input" type="text" name="check-out"
-                id="check-out" placeholder="Укажите дату" value="1 сентября 2021">
+                <input class="modal-input modal-date-input focus-border-blue" type="text" name="check-out"
+                id="check-out" placeholder="Укажите дату" value="1 сентября 2021" required>
                 <button class="modal-input-date-btn" type="button">
                   <svg class="modal-input-date-svg" role="img" aria-label="Выбор даты." width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><g>
                   <path d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z"/><path d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z"/><path d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5ZM9.5 10c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5ZM5.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM7.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM9.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM11.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM11.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/></g>
@@ -192,7 +195,7 @@
                   <button class="modal-input-less-btn modal-input-number-btn" type="button">
                     <svg role="img" aria-label="Уменьшить количество гостей." width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0v1h13V0H0Z"/></svg>
                   </button>
-                  <input class="modal-input modal-input-guests" type="text" name="adults" id="adults" placeholder="0" value="2">
+                  <input class="modal-input modal-input-guests focus-border-blue" type="text" name="adults" id="adults" placeholder="0" value="2" required>
                   <button class="modal-input-more-btn modal-input-number-btn" type="button">
                     <svg role="img" aria-label="Увеличить количество гостей." width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/></svg>
                   </button>
@@ -212,7 +215,7 @@
                   <button class="modal-input-less-btn modal-input-number-btn" type="button">
                     <svg role="img" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 0v1h13V0H0Z"/></svg>
                   </button>
-                  <input class="modal-input modal-input-guests" type="text" name="children" id="children" placeholder="0" value="1">
+                  <input class="modal-input modal-input-guests focus-border-blue" type="text" name="children" id="children" placeholder="0" value="1" required>
                   <button class="modal-input-more-btn modal-input-number-btn" type="button">
                     <svg role="img" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 6H7V0H6v6H0v1h6v6h1V7h6V6Z"/></svg>
                   </button>
