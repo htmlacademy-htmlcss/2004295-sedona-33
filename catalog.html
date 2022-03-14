@@ -117,9 +117,9 @@
             </fieldset>
             <fieldset class="checkbox checkbox-price">
               <legend class="checkbox-title checkbox-title-price">Стоимость, &#8381;:</legend>
-              <input class="price-input price-input-left form-text" type="text" value="0" name="price-from" id="low-price-span">
+              <input class="price-input price-input-left form-text" type="text" value="0" name="price-from" id="low-price-span" required>
               <label class="low-price-span" for="low-price-span">от</label>
-              <input class="price-input price-input-right form-text" type="text" value="9000" name="price-to" id="high-price-span">
+              <input class="price-input price-input-right form-text" type="text" value="9000" name="price-to" id="high-price-span" required>
               <label class="high-price-span" for="high-price-span">до</label>
               <div class="range-scale">
                 <div class="range-bar">
@@ -279,7 +279,7 @@
           <p class="subscribe-subtitle subscribe-subtitle-inner">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
             <label class="visually-hidden" for="subscribe-input">Форма подписки на рассылку.</label>
-            <input class="subscribe-input input focus-border-blue" type="email" name="e-mail" placeholder="Ваш e-mail" id="subscribe-input">
+            <input class="subscribe-input input focus-border-blue" type="email" name="e-mail" placeholder="Ваш e-mail" id="subscribe-input" required>
             <button class="subscribe-btn blue-btn active-opacity-text" type="submit">Подписаться</button>
           </form>
         </section>

@@ -621,7 +621,8 @@ img {
   border-bottom-left-radius: 10px;
 }
 
-.subscribe-input:invalid {
+/** Invalid состояние для формы подписки **/
+.subscribe-input-invalid:invalid {
   background-color: #FFFFFF;
   border: 2px solid #FF5757;
 }
@@ -896,12 +897,12 @@ img {
 .price-input:active {
   border-color: #FFFFFF;
   background-color: #756257;
+  background-color: #756257;
 }
 
 .price-input:focus {
   outline: none;
   border-color: #FFFFFF;
-  background-color: #756257;
   box-shadow: inset 0 0 0 3px #81B3D2, 0 0 0 3px #81B3D2;
 }
 
@@ -1488,13 +1489,11 @@ img {
   box-sizing: border-box;
 }
 
-.modal-input:active {
-  outline: none;
-  background-color: #FFFFFF;
-  box-shadow: inset 0 0 0 2px #000;
+.modal-input:focus {
+  background-color: #E6E6E6;
 }
 
-.modal-input:focus {
+.modal-input:active {
   outline: none;
   background-color: #FFFFFF;
   box-shadow: inset 0 0 0 2px #000;
