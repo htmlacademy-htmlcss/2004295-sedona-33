@@ -34,7 +34,7 @@
               <svg class="header-svg" role="img" aria-label="Поиск." aria-hidden="true" focusable="false" width="19" height="19" fill="none" viewBox="0 0 19 19" xmlns="http://www.w3.org/2000/svg">
                 <path d="m18.682 16.911-3.7-3.7c1-1.3 1.7-3 1.7-4.9 0-4.4-3.6-8-8-8s-8 3.7-8 8.1c0 4.4 3.6 8 8 8 1.8 0 3.5-.6 4.9-1.7l3.7 3.7 1.4-1.5Zm-10-2.5c-3.3 0-6-2.7-6-6s2.7-6 6-6 6 2.7 6 6-2.7 6-6 6Z"/>
               </svg>
-              <span class="visually-hidden">Поиск</span>
+              <span class="visually-hidden">Поиск.</span>
             </a>
           </div>
           <div class="favorites">
@@ -43,7 +43,7 @@
                 <path d="M9.582 17.411c-.3 0-.6-.1-.8-.4-5.4-6.1-6.7-7.5-7-7.9-.7-.9-1.1-2.1-1.1-3.3 0-3 2.4-5.4 5.5-5.4 1.3 0 2.5.5 3.5 1.3 1-.8 2.3-1.3 3.5-1.3 3 0 5.5 2.4 5.5 5.4 0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z"/>
               </svg>
               <span class="counter">12</span>
-              <span class="visually-hidden">Избранное</span>
+              <span class="visually-hidden">Избранное.</span>
             </a>
           </div>
           <a class="menu-btn brown-btn active-opacity-text focus-border-blue" href="#htl-search">Хочу сюда!</a>
@@ -55,7 +55,7 @@
           <ul class="breadcrumbs del_padding">
             <li class="breadcrumbs-item list-unstyle active-opacity hover-opacity">
               <a class="breadcrumbs-link active-opacity-text" href="index.html">
-                <span class="visually-hidden">Главная</span>
+                <span class="visually-hidden">Главная.</span>
               </a>
             </li>
             <li class="list-unstyle">
@@ -65,24 +65,24 @@
           <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="checkbox">
               <legend class="checkbox-title">Инфраструктура:</legend>
-              <ul class="del_padding">
+              <ul class="del_padding checkbox-list">
                 <li class="list-unstyle">
                   <label class="checkbox-label form-text">
-                    <input class="checkbox-input visually-hidden" type="checkbox" name="waterpool" checked>
+                    <input class="checkbox-input" type="checkbox" name="waterpool" checked>
                     <span class="checkbox-mark"></span>
                     <span class="checkbox-name">Бассейн</span>
                   </label>
                 </li>
                 <li class="list-unstyle">
                   <label class="checkbox-label form-text">
-                    <input class="checkbox-input visually-hidden" type="checkbox" name="parking" checked>
+                    <input class="checkbox-input" type="checkbox" name="parking" checked>
                     <span class="checkbox-mark"></span>
                     <span class="checkbox-name">Парковка</span>
                   </label>
                 </li>
                 <li class="list-unstyle">
                   <label class="checkbox-label form-text">
-                    <input class="checkbox-input visually-hidden" type="checkbox" name="wifi">
+                    <input class="checkbox-input" type="checkbox" name="wifi">
                     <span class="checkbox-mark"></span>
                     <span class="checkbox-name">Wi-Fi</span>
                   </label>
@@ -91,24 +91,24 @@
             </fieldset>
             <fieldset class="checkbox">
               <legend class="checkbox-title">Тип жилья:</legend>
-              <ul class="del_padding">
+              <ul class="del_padding checkbox-list">
                 <li class="list-unstyle">
                   <label class="checkbox-label form-text">
-                    <input class="checkbox-input visually-hidden" type="radio" name="residence" value="hotel" checked>
+                    <input class="checkbox-input" type="radio" name="residence" value="hotel" checked>
                     <span class="radio-mark"></span>
                     <span class="checkbox-name">Гостиница</span>
                   </label>
                 </li>
                 <li class="list-unstyle">
                   <label class="checkbox-label form-text">
-                    <input class="checkbox-input visually-hidden" type="radio" name="residence" value="motel">
+                    <input class="checkbox-input" type="radio" name="residence" value="motel">
                     <span class="radio-mark"></span>
                     <span class="checkbox-name">Мотель</span>
                   </label>
                 </li>
                 <li class="list-unstyle">
                   <label class="checkbox-label form-text">
-                    <input class="checkbox-input visually-hidden" type="radio" name="residence" value="appartments">
+                    <input class="checkbox-input" type="radio" name="residence" value="appartments">
                     <span class="radio-mark"></span>
                     <span class="checkbox-name">Апартаменты</span>
                   </label>
@@ -117,17 +117,17 @@
             </fieldset>
             <fieldset class="checkbox checkbox-price">
               <legend class="checkbox-title checkbox-title-price">Стоимость, &#8381;:</legend>
-              <input class="price-input price-input-left form-text" type="text" value="0" name="price-from">
-              <span class="low-price-span">от</span>
-              <input class="price-input price-input-right form-text" type="text" value="9000" name="price-to">
-              <span class="high-price-span">до</span>
+              <input class="price-input price-input-left form-text" type="text" value="0" name="price-from" id="low-price-span" required>
+              <label class="low-price-span" for="low-price-span">от</label>
+              <input class="price-input price-input-right form-text" type="text" value="9000" name="price-to" id="high-price-span" required>
+              <label class="high-price-span" for="high-price-span">до</label>
               <div class="range-scale">
                 <div class="range-bar">
                   <button class="range-toggle toggle-min" type="button">
                     <span class="visually-hidden">Изменить минимальную цену.</span>
                   </button>
                   <button class="range-toggle toggle-max" type="button">
-                    <span class="visually-hidden">Изменить максимальную цену</span>
+                    <span class="visually-hidden">Изменить максимальную цену.</span>
                   </button>
                 </div>
               </div>
@@ -139,7 +139,7 @@
           </form>
         </section>
         <section class="variants-container">
-          <h2 class="visually-hidden">Варианты размещения</h2>
+          <h2 class="visually-hidden">Варианты размещения.</h2>
           <div class="results">
             <p class="results-title">Найдено гостиниц:
               <span>38</span>
@@ -150,13 +150,19 @@
             </select>
             <ul class="display-mode del_padding">
               <li class="display-item list-unstyle">
-                <button class="display-btn display-tile display-btn-current" type="button" aria-label="Отобразить плиткой"></button>
+                <button class="display-btn display-tile display-btn-current" type="button">
+                  <span class="visually-hidden">Отобразить плиткой.</span>
+                </button>
               </li>
               <li class="display-item list-unstyle">
-                <button class="display-btn display-slide" type="button" aria-label="Отобразить слайдшоу"></button>
+                <button class="display-btn display-slide" type="button">
+                  <span class="visually-hidden">Отобразить слайдшоу.</span>
+                </button>
               </li>
               <li class="display-item list-unstyle">
-                <button class="display-btn display-list" type="button" aria-label="Отобразить списком"></button>
+                <button class="display-btn display-list" type="button">
+                  <span class="visually-hidden">Отобразить списком.</span>
+                </button>
               </li>
             </ul>
           </div>
@@ -272,7 +278,8 @@
           <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
           <p class="subscribe-subtitle subscribe-subtitle-inner">Только полезная информация и никакого спама, <br>честное бойскаутское!</p>
           <form class="subscribe-form" action="https://echo.htmlacademy.ru" method="post">
-            <input class="subscribe-input input focus-border-blue" type="email" name="e-mail" placeholder="Ваш e-mail" aria-label="Форма подписки на рассылку">
+            <label class="visually-hidden" for="subscribe-input">Форма подписки на рассылку.</label>
+            <input class="subscribe-input input focus-border-blue" type="email" name="e-mail" placeholder="Ваш e-mail" id="subscribe-input" required>
             <button class="subscribe-btn blue-btn active-opacity-text" type="submit">Подписаться</button>
           </form>
         </section>
@@ -284,7 +291,7 @@
               <svg class="socials-svg" role="img" aria-label="Твиттер." width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M11.6.2c1.8-.5 3.2.3 3.8 1.2.7-.2 1.4-.5 2.1-.7 0 .9-.6 1.5-.9 1.8.7.1 1.4-.6 1.4-.6-.2 1-1.1 1.8-1.7 2C16.1 10.7 13 15.1 5.7 15h-.5c-.4 0-4.4-.5-5.2-1.9 2.4.2 4.1-.4 5-1.2-1-.3-2.9-.4-3.2-2.9.4.1.6.2 1.3.1C1.8 8.3.4 7.5.5 5.3c.3.3 1.1.5 1.4.5C1.1 5.6-.2 2.5.9.9c1.9 1.9 4 3.6 7.6 3.8C8.7 2.3 9.7.8 11.6.2Z"/>
               </svg>
-              <span class="visually-hidden">Twitter link</span>
+              <span class="visually-hidden">Twitter link.</span>
             </a>
           </li>
           <li class="socials-item active-opacity">
@@ -292,7 +299,7 @@
               <svg class="socials-svg" role="img" aria-label="Фэйсбук." width="10" height="18" viewBox="0 0 10 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M7 0C4.8 0 3 1.8 3 4v2H0v4h3v8h4v-8h3V6H7V4h3V0H7Z"/>
               </svg>
-              <span class="visually-hidden">Facebook link</span>
+              <span class="visually-hidden">Facebook link.</span>
             </a>
           </li>
           <li class="socials-item active-opacity">
@@ -301,7 +308,7 @@
                 <path d="M17 0H2.9C1.2 0 0 1.5 0 3.2v9.5C0 14.5 1.2 16 2.9 16h14.3c1.5 0 2.9-1.5 2.9-3.2V3.2C19.9 1.5 18.7 0 17 0ZM7 11.8V4.2L13.7 8 7 11.8Z"/></g><defs><clipPath id="a">
                 <path d="M0 0h20v16H0z"/></clipPath></defs>
               </svg>
-              <span class="visually-hidden">Youtube link</span>
+              <span class="visually-hidden">Youtube link.</span>
             </a>
           </li>
         </ul>
